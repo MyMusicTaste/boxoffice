@@ -14,4 +14,5 @@ pip install scrapy
 
 #command reference
 scrapy crawl bo
+
 scrapy crawl bospider -o items.json
