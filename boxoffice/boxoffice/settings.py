@@ -13,7 +13,9 @@ BOT_NAME = 'boxoffice'
 
 SPIDER_MODULES = ['boxoffice.spiders']
 NEWSPIDER_MODULE = 'boxoffice.spiders'
+DEFAULT_ITEM_CLASS = 'boxoffice.items.BoxofficeItem'
 
+ITEM_PIPELINES = {'boxoffice.pipelines.BoxofficePipeline': 1}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'boxoffice (+http://www.yourdomain.com)'
