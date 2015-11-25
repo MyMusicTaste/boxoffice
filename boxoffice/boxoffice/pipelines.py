@@ -45,5 +45,3 @@ class BoxofficePipeline(object):
         db.close()
 
         return item
-
-    def
