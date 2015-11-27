@@ -27,10 +27,20 @@ class BoxDateParser:
 
         dates_list = list()
         for element in date_string:
+        #     if element.find('-') >= 0:
+        #         element = element.split('-')
+        #         tempList = list()
+        #         index = int(element[0])
+        #         while index <= int(element[1]):
+        #             tempList.append(str(index))
+        #             index += 1
+        #         dates_list += tempList
+        #     else:
+        #         element = element.split('-')
+        #         dates_list += element
             element = element.split('-')
             dates_list += element
 
-        # ex ['Jan.', '2', '3', '2015']
         return dates_list
 
     # 문자열이 년도가 맞는지 확인 True = 1, False = 0
@@ -104,6 +114,6 @@ class BoxDateParser:
 
         return processed_list
 
-# test = BoxDateParser()
-# print test.get_date_string('Nov. 14, Feb. 25 2015 / Oct. 24-25, Aug. 2 2016, Jan. 25, 2017')
+test = BoxDateParser()
+print test.get_date_string('Nov. 14-Feb. 1, 2015 / Oct. 24-25, Aug. 2 2016, Jan. 25, 2017')
 
