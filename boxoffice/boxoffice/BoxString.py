@@ -20,6 +20,7 @@ class BoxString:
         string = str(string)
         string = string.replace('\u00a0', '')
         string = string.replace(' ', '')
+        string = string.replace(',', '')
         return_list = string.split('/')
 
         for index, value in enumerate(return_list):

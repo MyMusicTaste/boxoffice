@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+import calendar
 
 class BoxDateParser:
 
@@ -26,22 +26,43 @@ class BoxDateParser:
         date_string = date_string.split()
 
         dates_list = list()
-        for element in date_string:
-        #     if element.find('-') >= 0:
-        #         element = element.split('-')
-        #         tempList = list()
-        #         index = int(element[0])
-        #         while index <= int(element[1]):
-        #             tempList.append(str(index))
-        #             index += 1
-        #         dates_list += tempList
-        #     else:
-        #         element = element.split('-')
-        #         dates_list += element
-            element = element.split('-')
-            dates_list += element
+        for index, element in enumerate(date_string):
+            #
+            if element.find('-') >= 0:
+                element = element.split('-')
+                templist = list()
+
+                if self.check_is_year(element[0]):
+                    print 'continue to until next year...'
+                else:
+                    date = int(element[0])
+
+                    if self.check_is_number(element[1]):
+                        while date <= int(element[1]):
+                            templist.append(str(date))
+                            date += 1
+                        dates_list += templist
+                    else:
+                        print 'continue to until next month...'
+                        # element[1]은 달이므로 다음인덱스의 날짜까지
+
+            else:
+                element = element.split('-')
+                dates_list += element
+
+        # '-'가 하루차일때
+        #     element = element.split('-')
+        #     dates_list += element
 
         return dates_list
+
+    # 숫자로만 구성되어 있으면 True = 1, False = 0
+    def check_is_number(self, param_string):
+        for character in param_string:
+            # ascii 48 = 0, ascii 57 = 9
+            if ord(character) < 48 or ord(character) > 57:
+                return 0
+        return 1
 
     # 문자열이 년도가 맞는지 확인 True = 1, False = 0
     def check_is_year(self, param_string):
@@ -115,5 +136,6 @@ class BoxDateParser:
         return processed_list
 
 test = BoxDateParser()
-print test.get_date_string('Nov. 14-Feb. 1, 2015 / Oct. 24-25, Aug. 2 2016, Jan. 25, 2017')
-
+print test.get_date_string('Nov. 14-18, 2015 / Oct. 24-25, Aug. 2 2016, Jan. 25, 2017')
+print test.get_date_string('Nov. 14-Feb. 2, 2015 / Oct. 24-25, Aug. 2 2016, Jan. 25, 2017')
+# 최악의 시나리오 Dec. 31, 2015-Jan. 3, 2016 ?

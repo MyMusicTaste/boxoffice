@@ -6,14 +6,16 @@ from items import BoxofficeItem
 from DateParse import BoxDateParser
 from BoxString import BoxString
 
+import calendar
 
 class BoxLocalDatabase:
 
 
-    db = MySQLdb.connect('localhost', 'kokonak', '1234', 'testdatabase')
+    db = MySQLdb.connect('localhost', 'root', '', 'testdatabase')
 
-    # def __int__(self):
-    #     self.create_tables()
+    def __int__(self):
+        print 'init'
+        # self.create_tables()
 
     def drop_all_table(self):
 
@@ -407,24 +409,18 @@ class BoxLocalDatabase:
 
 
 
-test = BoxLocalDatabase()
-item = {"city": "Minneapolis, Minn.",
-        "date": "July 24, 2015",
-        "shows_sellout": "1\u00a0/\u00a01",
-        "promoters": "AEG Live",
-        "attend_cap": "200\u00a0/",
-        "venue": "The Nether Bar at Mill City Nights",
-        "rank": "520",
-        "artist_event": "Huey Mack",
-        "prices": "$129.50, $49.50",
-        "gross_sales": "$1,663,272, $1,663,273"}
-
-# test.drop_all_table()
-test.create_tables()
-test.insert_item(item)
-
-# cursor = test.db.cursor()
-# cursor.execute('select * from Event where artist_event_id = 1 and city_id = 1')
-# print cursor.fetchone()
-# for index,  row in enumerate(cursor):
-#     print("%s : %s" % (index, len(row)))
+# test = BoxLocalDatabase()
+# item = {"city": "Minneapolis, Minn.",
+#         "date": "July 24, 2015",
+#         "shows_sellout": "1\u00a0/\u00a01",
+#         "promoters": "AEG Live",
+#         "attend_cap": "200\u00a0/",
+#         "venue": "The Nether Bar at Mill City Nights",
+#         "rank": "520",
+#         "artist_event": "Huey Mack",
+#         "prices": "$129.50, $49.50",
+#         "gross_sales": "$1,663,272, $1,663,273"}
+#
+# # test.drop_all_table()
+# test.create_tables()
+# test.insert_item(item)
