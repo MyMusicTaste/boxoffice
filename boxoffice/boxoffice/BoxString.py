@@ -1,10 +1,12 @@
+# -*- coding: utf-8 -*-
 
 class BoxString:
 
     @staticmethod
     def normalize_attend_capacity(string):
-        string = str(string)
-        string = string.replace('\u00a0', '')
+        # string = str(string)
+
+        string = string.encode('ascii','ignore')
         string = string.replace(' ', '')
         string = string.replace(',', '')
         return_list = string.split('/')
@@ -17,8 +19,8 @@ class BoxString:
 
     @staticmethod
     def normalize_shows_sellout(string):
-        string = str(string)
-        string = string.replace('\u00a0', '')
+        string = string.encode('ascii','ignore')
+
         string = string.replace(' ', '')
         string = string.replace(',', '')
         return_list = string.split('/')
@@ -69,3 +71,8 @@ class BoxString:
         string = str(string)
         return_list = string.split(',')
         return return_list
+
+    @staticmethod
+    def normalize_venue(string):
+        string = string.replace('/', ' ')
+        return string
