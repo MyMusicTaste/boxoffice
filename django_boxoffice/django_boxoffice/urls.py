@@ -18,4 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^boxoffice/$', 'django_boxoffice.boxoffice_app.views.index'),
+    url(r'^boxoffice/artist/$', 'django_boxoffice.boxoffice_app.views.getArtist_Event'),
+    # url(r'^boxoffice/page/(?P<artist>\d+)/$', 'django_boxoffice.boxoffice_app.views.getArtist_Event'),
 ]
