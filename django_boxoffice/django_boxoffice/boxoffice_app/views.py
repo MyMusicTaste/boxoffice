@@ -10,3 +10,4 @@ def index(request, page='default'):
 def getArtist_Event(request):
     array = Event.objects.all()
     return HttpResponse("test : %s" % array)
+

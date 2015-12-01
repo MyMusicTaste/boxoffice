@@ -9,6 +9,9 @@ class ArtistEvent(models.Model):
     class Admin:
         pass
 
+    def __unicode__(self):
+        return self.name
+
 
 class City(models.Model):
     # id = models.AutoField( primary_key=True)
@@ -18,6 +21,8 @@ class City(models.Model):
     class Admin:
         pass
 
+    def __unicode__(self):
+        return "%s, %s" % (self.name, self.state)
 
 class Venue(models.Model):
     # id = models.AutoField( primary_key=True)
