@@ -18,7 +18,15 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^boxoffice/$', 'django_boxoffice.boxoffice_app.views.index'),
-    url(r'^boxoffice/artist/$', 'django_boxoffice.boxoffice_app.views.getArtist_Event'),
-    # url(r'^boxoffice/page/(?P<artist>\d+)/$', 'django_boxoffice.boxoffice_app.views.getArtist_Event'),
+
+    url(r'^boxoffice/date/$', 'django_boxoffice.boxoffice_app.views.get_date'),
+    url(r'^boxoffice/date/(?P<sdate>[0-9]+)/$', 'django_boxoffice.boxoffice_app.views.get_date'),
+    url(r'^boxoffice/date/(?P<sdate>[0-9]+)/(?P<ldate>[0-9]+)/$', 'django_boxoffice.boxoffice_app.views.get_date'),
+
+    url(r'^boxoffice/artist/$', 'django_boxoffice.boxoffice_app.views.get_artist_event'),
+    url(r'^boxoffice/artist/(?P<artist_id>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_artist_event'),
+    url(r'^boxoffice/promoter/$', 'django_boxoffice.boxoffice_app.views.get_promoter'),
+    url(r'^boxoffice/promoter/(?P<promoter_id>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_promoter'),
+
+
 ]

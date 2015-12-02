@@ -418,7 +418,7 @@ class BoxLocalDatabase:
                                       """AND boxoffice_app_Event.dates = "%s" """ \
                                       """AND boxoffice_app_City.name = "%s" AND boxoffice_app_City.state = "%s" """ \
                                       """AND boxoffice_app_Venue.name = "%s") """ \
-                                      """AND year = %s AND month = %s AND date = %s; """ \
+                                      """AND event_date = "%s-%s-%s"; """ \
                                       % (artist_event, date_list, city, state, venue, dateObj[0], dateObj[1], date)
                         cursor.execute(check_query)
                         for row in cursor:
@@ -431,7 +431,7 @@ class BoxLocalDatabase:
                                         """WHERE boxoffice_app_ArtistEvent.name = "%s" """ \
                                         """AND boxoffice_app_Event.dates = "%s" """ \
                                         """AND boxoffice_app_City.name = "%s" AND boxoffice_app_City.state = "%s" """ \
-                                        """AND boxoffice_app_Venue.name = "%s"), %s, %s, %s); """ \
+                                        """AND boxoffice_app_Venue.name = "%s"), "%s-%s-%s"); """ \
                                         % (artist_event, date_list, city, state, venue, dateObj[0], dateObj[1], date)
 
                                 cursor.execute(query)

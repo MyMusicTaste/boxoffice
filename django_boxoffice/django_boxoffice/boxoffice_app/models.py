@@ -3,7 +3,6 @@ from django.db import models
 
 # Create your models here.
 class ArtistEvent(models.Model):
-    # id = models.AutoField( primary_key=True)
     name = models.CharField(max_length=512)
 
     class Admin:
@@ -14,7 +13,6 @@ class ArtistEvent(models.Model):
 
 
 class City(models.Model):
-    # id = models.AutoField( primary_key=True)
     name = models.CharField(max_length=256)
     state = models.CharField(max_length=256)
 
@@ -24,32 +22,38 @@ class City(models.Model):
     def __unicode__(self):
         return "%s, %s" % (self.name, self.state)
 
+
 class Venue(models.Model):
-    # id = models.AutoField( primary_key=True)
     name = models.CharField(max_length=256)
 
     class Admin:
         pass
 
+    def __unicode__(self):
+        return self.name
+
 
 class Price(models.Model):
-    # id = models.AutoField( primary_key=True)
     price = models.FloatField()
 
     class Admin:
         pass
 
+    def __unicode__(self):
+        return '$%s' % self.price
+
 
 class Promoter(models.Model):
-    # id = models.AutoField( primary_key=True)
     name = models.CharField(max_length=256)
 
     class Admin:
         pass
 
+    def __unicode__(self):
+        return self.name
+
 
 class Event(models.Model):
-    # id = models.AutoField( primary_key=True)
     artist_event = models.ForeignKey(ArtistEvent)
     city = models.ForeignKey(City)
     venue = models.ForeignKey(Venue)
@@ -68,40 +72,53 @@ class Event(models.Model):
 class EventPromoter(models.Model):
     class Meta:
         unique_together = (('event', 'promoter'),)
-    # id = models.AutoField( primary_key=True)
+
     event = models.ForeignKey(Event)
     promoter = models.ForeignKey(Promoter)
 
     class Admin:
         pass
 
+    def __unicode__(self):
+        return "%s, %s" % (self.event_id, self.promoter_id)
+
 
 class EventPrice(models.Model):
     class Meta:
         unique_together = (('event', 'price'),)
-    # id = models.AutoField( primary_key=True)
+
     event = models.ForeignKey(Event)
     price = models.ForeignKey(Price)
 
     class Admin:
         pass
 
+    def __unicode__(self):
+        return "%s, %s" % (self.event_id, self.price_id)
+
+
 
 class Date(models.Model):
     class Meta:
-        unique_together = (('event', 'year', 'month', 'date'),)
-    # id = models.AutoField( primary_key=True)
+        unique_together = (('event', 'event_date'),)
+        # unique_together = (('event', 'year', 'month', 'date'),)
+
     event = models.ForeignKey(Event)
-    year = models.IntegerField()
-    month = models.IntegerField()
-    date = models.IntegerField()
+    event_date = models.DateField()
+    # year = models.IntegerField()
+    # month = models.IntegerField()
+    # date = models.IntegerField()
 
     class Admin:
         pass
 
+    def __unicode__(self):
+        return self.event_date
+
+    def __repr__(self):
+        return str(self.event_date)
 
 class ErrorLog(models.Model):
-    # id = models.AutoField( primary_key=True)
     table_name = models.CharField(max_length=256)
     artist_event = models.CharField(max_length=512)
     city = models.CharField(max_length=256)
@@ -116,4 +133,7 @@ class ErrorLog(models.Model):
 
     class Admin:
         pass
+
+    def __unicode__(self):
+        return self.table_name
 
