@@ -41,12 +41,11 @@ def get_date(request, sdate=None, ldate=None):
         first_date = sdt.date()
         last_date = ldt.date()
 
-        arr = models.Date.objects.filter(event_date__range=[first_date, last_date])
-        # , '%s-%s-%s' % (ldt.year, ldt.month, ldt.day)
-
+        arr = models.Date.objects.filter(event_date__range=[first_date, last_date]).\
+            values('event_id').distinct()
 
         for date in arr:
-            print(date.event_date)
+            print("%s" % (date['event_id']))
 
         return HttpResponse('year:%s, month:%s, date:%s - year:%s, month:%s, date:%s'
                             % (sdt.year, sdt.month, sdt.day, ldt.year, ldt.month, ldt.day))

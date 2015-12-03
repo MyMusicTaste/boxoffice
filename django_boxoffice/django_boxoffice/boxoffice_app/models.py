@@ -113,10 +113,10 @@ class Date(models.Model):
         pass
 
     def __unicode__(self):
-        return self.event_date
+        return '%s, %s' % (self.event_id, self.event_date)
 
     def __repr__(self):
-        return str(self.event_date)
+        return '"event_id" : "%s", "event_date" : "%s"' % (self.event_id, self.event_date)
 
 class ErrorLog(models.Model):
     table_name = models.CharField(max_length=256)
