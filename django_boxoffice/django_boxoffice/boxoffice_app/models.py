@@ -97,7 +97,6 @@ class EventPrice(models.Model):
         return "%s, %s" % (self.event_id, self.price_id)
 
 
-
 class Date(models.Model):
     class Meta:
         unique_together = (('event', 'event_date'),)
@@ -113,10 +112,12 @@ class Date(models.Model):
         pass
 
     def __unicode__(self):
-        return '%s, %s' % (self.event_id, self.event_date)
+        return '"event_id" : "%s", "event_date" : "%s"' % (self.event_id, self.event_date)
 
     def __repr__(self):
+        # return self
         return '"event_id" : "%s", "event_date" : "%s"' % (self.event_id, self.event_date)
+
 
 class ErrorLog(models.Model):
     table_name = models.CharField(max_length=256)

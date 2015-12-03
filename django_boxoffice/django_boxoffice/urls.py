@@ -28,5 +28,7 @@ urlpatterns = [
     url(r'^boxoffice/promoter/$', 'django_boxoffice.boxoffice_app.views.get_promoter'),
     url(r'^boxoffice/promoter/(?P<promoter_id>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_promoter'),
 
-
+    url(r'^boxoffice/event/$', 'django_boxoffice.boxoffice_app.views.get_event'),
+    url(r'^boxoffice/event/(?P<param_id>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_event'),
+    url(r'^boxoffice/event/(?P<parameter>[a-z]+)/(?P<param_id>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_event'),
 ]
