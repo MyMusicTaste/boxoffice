@@ -40,7 +40,12 @@ class BoxDateParser:
                         date += 1
                     dates_list += templist
                 else:
-                    raise ValueError("get_date_list - split error ( '-' ) ")
+                    # 다른달과 이어짐. Nov. 30 - Dec. 2
+                    templist.append(element[0])
+                    templist.append('-')
+                    templist.append(element[1])
+                    dates_list += templist
+                    # raise ValueError("get_date_list - split error ( '-' ) ")
 
             else:
                 element = element.split('-')
@@ -86,6 +91,10 @@ class BoxDateParser:
     # 달로 구분한 리스트를 만들어 리턴
     def get_month_list(self, param_list):
 
+        original_list = param_list
+
+        param_list = param_list[0:-1]
+
         month_index_array = list()
         month_list = list()
 
@@ -95,7 +104,6 @@ class BoxDateParser:
                     param_list[index] = month_string[2]
                     month_index_array.append(index)
 
-
         index = 0
         while True:
             if index == len(month_index_array)-1:
@@ -104,6 +112,43 @@ class BoxDateParser:
 
             month_list.append(param_list[month_index_array[index]:month_index_array[index + 1]])
             index += 1
+
+
+
+        for list_index, month in enumerate(month_list):
+            for index, string in enumerate(month):
+                if string == '-' and index == len(month)-1:
+
+                    range_tuple = calendar.monthrange(int(original_list[-1]), int(month[0]))
+
+                    last_date = range_tuple[1]
+                    start_date = int(month[index-1])
+
+                    while True:
+                        if int(start_date) >= int(last_date):
+                            break
+                        else:
+                            start_date += 1
+                            month.append(str(start_date))
+                    del month[index]
+
+                    if list_index < len(month_list)-1:
+                        new_month = month_list[list_index + 1]
+                        last_date = new_month[1]
+
+                        start_date = 0
+
+                        new_list = list()
+                        while True:
+                            if int(start_date) >= int(last_date)-1:
+                                break
+                            else:
+                                start_date += 1
+                                new_month.append(str(start_date))
+                        # new_month
+
+
+
         return month_list
 
     # 받은 문자열로 [년도, 달, 날짜들]로 구성된 리스트 만들어 리턴
@@ -118,10 +163,12 @@ class BoxDateParser:
 
             # self.get_month_list(array[0:-1])
             # print(self.get_month_list(array[0:-1]))
-                month_list = self.get_month_list(array[0:-1])
+                month_list = self.get_month_list(array)
 
                 for date_list in month_list:
-                    processed_list.append([array[-1], date_list[0], date_list[1:]])
+                    new_dates = date_list[1:]
+                    new_dates.sort()
+                    processed_list.append([array[-1], date_list[0], new_dates])
 
             return processed_list
         except ValueError as e:
@@ -129,9 +176,9 @@ class BoxDateParser:
             return None
 
 # test = BoxDateParser()
-# # print test.get_date_string('Nov. 14-18, 2015 / Oct. 24-25, Aug. 2 2016, Jan. 25, 2017')
+# print test.get_date_string('Nov. 14-18, 2015 / Oct. 24-25, Aug. 2 2016, Jan. 25, 2017')
 # # print test.get_date_string('Nov. 14-Feb. 2, 2015 / Oct. 24-25, Aug. 2 2016, Jan. 25, 2017')
 # # print test.get_date_string('Oct. 11, 16, Nov. 23, 25-Dec. 28, 2015, Jan. 2, Oct. 8, 2016')
 #
-# test2 = test.get_date_string('Nov. 12, 25-Dec. 23, 25, 30-31, 2016')
+# test2 = test.get_date_string('Oct. 29-Nov. 1, 25-Dec. 5, 2016')
 # print test2

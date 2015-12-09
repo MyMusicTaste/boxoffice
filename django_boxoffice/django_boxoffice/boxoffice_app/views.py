@@ -47,7 +47,7 @@ def get_date(request, sdate=None, ldate=None):
                 return_list.append(date)
 
     n = json.dumps(return_list)
-    json_string = '{"Dates : %s}' % n
+    json_string = '{"Dates" : %s}' % n
 
     return HttpResponse(json_string)
 
