@@ -27,24 +27,21 @@ def get_date(request, sdate=None, ldate=None):
         first_date = sdt.date()
 
         if ldate is None:
-
-            date_list = models.Date.objects.filter(event_date__gte=first_date)
-
+            date_list = models.Date.objects.values('event_id').filter(event_date__gte=first_date).distinct()
             for date in date_list:
-                date_dict = {"event_id": date.event_id, "event_date": date.event_date.strftime("%Y-%m-%d")}
-                return_list.append(date_dict)
+                event = models.Event.objects.get(pk=date['event_id'])
+                return_list.append(get_event_dict(event))
 
         else:
             ldt = parser.parse(ldate, default=default_date, fuzzy=True)
             last_date = ldt.date()
 
-            date_list = models.Date.objects.filter(event_date__range=[first_date, last_date]).\
-                values('event_id', 'event_date').distinct()
+            date_list = models.Date.objects.values('event_id').filter(event_date__range=[first_date, last_date])\
+                .distinct()
 
-            return_list = list()
             for date in date_list:
-                date['event_date'] = date['event_date'].strftime("%Y-%m-%d")
-                return_list.append(date)
+                event = models.Event.objects.get(pk=date['event_id'])
+                return_list.append(get_event_dict(event))
 
     n = json.dumps(return_list)
     json_string = '{"Dates" : %s}' % n
