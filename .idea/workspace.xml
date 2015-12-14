@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7afca14d-ba5b-446d-bff7-cd6327a520c8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py" afterPath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py" afterPath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py" />
     </list>
     <ignored path="Boxoffice.iws" />
@@ -80,7 +79,7 @@
             <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/urls.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+                  <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
                   <folding>
                     <element signature="e#625#666#0" expanded="true" />
                   </folding>
@@ -91,14 +90,10 @@
           <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8724955">
-                  <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.46448088">
+                  <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
                   <folding>
                     <element signature="e#24#59#0" expanded="true" />
-                    <element signature="e#1790#2238#0" expanded="false" />
-                    <element signature="e#2350#2805#0" expanded="false" />
-                    <element signature="e#3206#4646#0" expanded="false" />
-                    <element signature="e#4706#5740#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -121,7 +116,7 @@
           <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5118397">
+                <state vertical-scroll-proportion="1.568306">
                   <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
                   <folding />
                 </state>
@@ -173,8 +168,8 @@
         <option value="$PROJECT_DIR$/boxoffice/boxoffice/BoxLocalDatabase.py" />
         <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/urls.py" />
         <option value="$PROJECT_DIR$/boxoffice/boxoffice/DateParse.py" />
-        <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py" />
         <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py" />
       </list>
     </option>
   </component>
@@ -184,8 +179,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="y" value="23" />
+    <option name="x" value="2560" />
+    <option name="y" value="383" />
     <option name="width" value="1920" />
     <option name="height" value="1057" />
   </component>
@@ -670,10 +665,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="2560" y="383" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09371672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09478168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.10658083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -683,7 +678,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1971831" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40207255" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40207255" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -749,7 +744,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="272" />
+      <option name="time" value="273" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -984,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2389937">
           <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1075,7 +1069,7 @@
     <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="42" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+          <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
           <folding>
             <element signature="e#625#666#0" expanded="true" />
           </folding>
@@ -1108,7 +1102,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.025041737">
           <caret line="119" column="38" selection-start-line="119" selection-start-column="38" selection-end-line="119" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1116,6 +1109,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="163" column="46" selection-start-line="163" selection-start-column="46" selection-end-line="163" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.568306">
+          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1130,23 +1131,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8724955">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.46448088">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="e#24#59#0" expanded="true" />
-            <element signature="e#1790#2238#0" expanded="false" />
-            <element signature="e#2350#2805#0" expanded="false" />
-            <element signature="e#3206#4646#0" expanded="false" />
-            <element signature="e#4706#5740#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5118397">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

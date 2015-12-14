@@ -18,8 +18,8 @@ def get_date(request, sdate=None, ldate=None):
 
         return_list = list()
         for date in date_list:
-            date_dict = {"event_id": date.event_id, "event_date": date.event_date.strftime("%Y-%m-%d")}
-            return_list.append(date_dict)
+            event = models.Event.objects.get(pk=date.event_id)
+            return_list.append(get_event_dict(event))
 
     else:
         default_date = datetime.datetime(datetime.MINYEAR, 1, 1)
