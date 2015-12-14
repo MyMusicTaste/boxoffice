@@ -2,6 +2,15 @@ from django.db import models
 
 
 # Create your models here.
+class UpdateLog(models.Model):
+    last_update = models.CharField(max_length=128)
+
+    class Admin:
+        pass
+
+    def __unicode__(self):
+        return self.last_update
+
 class ArtistEvent(models.Model):
     name = models.CharField(max_length=512)
 
@@ -64,6 +73,7 @@ class Event(models.Model):
     sellout = models.IntegerField()
     rank = models.IntegerField()
     dates = models.CharField(max_length=512)
+    create_date = models.CharField(max_length=128)
 
     class Admin:
         pass
@@ -131,6 +141,7 @@ class ErrorLog(models.Model):
     dates = models.CharField(max_length=512)
     prices = models.CharField(max_length=256)
     promoters = models.CharField(max_length=512)
+    create_date = models.CharField(max_length=128)
 
     class Admin:
         pass

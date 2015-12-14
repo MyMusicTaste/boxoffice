@@ -18,3 +18,4 @@ class BoxofficeItem(scrapy.Item):
     shows_sellout = scrapy.Field()
     prices = scrapy.Field()
     promoters = scrapy.Field()
+    create_date = scrapy.Field()

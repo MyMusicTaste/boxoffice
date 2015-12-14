@@ -10,6 +10,7 @@ from .models import EventPrice
 from .models import EventPromoter
 from .models import Date
 from .models import ErrorLog
+from .models import UpdateLog
 
 
 @admin.register(Event)
@@ -25,6 +26,7 @@ class EventAdmin(admin.ModelAdmin):
 
 
 # Register your models here.
+admin.site.register(UpdateLog)
 admin.site.register(ArtistEvent)
 admin.site.register(City)
 admin.site.register(Venue)

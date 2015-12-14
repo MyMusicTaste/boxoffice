@@ -6,6 +6,9 @@ import MySQLdb
 from DateParse import BoxDateParser
 from BoxString import BoxString
 
+import datetime
+from time import strftime
+
 import json
 
 
@@ -41,6 +44,13 @@ class BoxLocalDatabase:
         # query = "CREATE DATABASE IF NOT EXiSTS testdatabase;"
         # cursor.execute(query)
 
+        query = "CREATE TABLE IF NOT EXISTS boxoffice_app_UpdateLog( " \
+                + "id INT NOT NULL AUTO_INCREMENT, " \
+                + "last_update varchar (128), " \
+                + 'PRIMARY KEY (id)' \
+                + '); '
+        cursor.execute(query)
+
         query = "CREATE TABLE IF NOT EXISTS  boxoffice_app_ErrorLog( " \
                 + "id INT NOT NULL AUTO_INCREMENT, " \
                 + "table_name VARCHAR (256) , " \
@@ -54,6 +64,7 @@ class BoxLocalDatabase:
                 + "dates VARCHAR (512) ," \
                 + "prices VARCHAR (256) ," \
                 + "promoters VARCHAR (512) ," \
+                + "create_date VARCHAR (128), " \
                 + 'PRIMARY KEY (id)' \
                 + '); '
         cursor.execute(query)
@@ -92,6 +103,7 @@ class BoxLocalDatabase:
                 + "sellout INT ," \
                 + "rank INT ," \
                 + "dates VARCHAR (512) ," \
+                + "create_date VARCHAR (128), " \
                 + "PRIMARY KEY (id) ," \
                 + "FOREIGN KEY (artist_event_id) REFERENCES boxoffice_app_ArtistEvent (id) ," \
                 + "FOREIGN KEY (city_id) REFERENCES boxoffice_app_City (id) ," \
@@ -136,9 +148,7 @@ class BoxLocalDatabase:
         query = "CREATE TABLE  IF NOT EXISTS boxoffice_app_Date(" \
                 + "id INT NOT NULL AUTO_INCREMENT, " \
                 + "event_id int NOT NULL ," \
-                + "year INT ," \
-                + "month INT ," \
-                + "date INT ," \
+                + "event_date DATETIME ," \
                 + "PRIMARY KEY (id)," \
                 + "FOREIGN KEY (event_id) REFERENCES boxoffice_app_Event (id)" \
                 + "); "
@@ -259,6 +269,8 @@ class BoxLocalDatabase:
             show = shows_sellout_list[0]
             sellout = shows_sellout_list[1]
 
+            update_date = item["create_date"]
+
             check_query = """SELECT COUNT(*) """\
                           """FROM boxoffice_app_Event """ \
                           """WHERE id = (SELECT boxoffice_app_Event.id """ \
@@ -266,8 +278,8 @@ class BoxLocalDatabase:
                           """WHERE artist_event_id=(SELECT id FROM boxoffice_app_ArtistEvent where name = "%s") """ \
                           """AND venue_id=(SELECT id FROM boxoffice_app_Venue where name = "%s") """ \
                           """AND city_id=(SELECT id FROM boxoffice_app_City where name = "%s" AND state = "%s") """ \
-                          """AND dates = "%s") """ \
-                          % (artist_event, venue, city, state, date_list)
+                          """AND dates = "%s" AND create_date = "%s") """ \
+                          % (artist_event, venue, city, state, date_list, update_date)
             cursor.execute(check_query)
 
             for row in cursor:
@@ -278,8 +290,8 @@ class BoxLocalDatabase:
                             """NULL, """ \
                             """(SELECT id FROM boxoffice_app_ArtistEvent WHERE name = "%s"), """ \
                             """(SELECT id FROM boxoffice_app_City WHERE name = "%s" AND state = "%s"), """ \
-                            """(SELECT id FROM boxoffice_app_Venue WHERE name = "%s"), "%s", %s, %s, %s, %s, %s, "%s");""" \
-                            % (artist_event, city, state, venue, sale, attend, capacity, show, sellout, rank, date_list)
+                            """(SELECT id FROM boxoffice_app_Venue WHERE name = "%s"), "%s", %s, %s, %s, %s, %s, "%s", "%s");""" \
+                            % (artist_event, city, state, venue, sale, attend, capacity, show, sellout, rank, date_list, update_date)
                     cursor.execute(query)
                     self.db.commit()
 
@@ -303,6 +315,7 @@ class BoxLocalDatabase:
             state = city_list[1]
             date_list = item['date']
             promoters_list = BoxString.normalize_promoters(item['promoters'])
+            update_date = item["create_date"]
 
             for promoter in promoters_list:
                 check_query = """SELECT COUNT(*) """ \
@@ -312,11 +325,11 @@ class BoxLocalDatabase:
                               """WHERE artist_event_id=(SELECT id FROM boxoffice_app_ArtistEvent where name = "%s") """ \
                               """AND venue_id=(SELECT id FROM boxoffice_app_Venue where name = "%s") """ \
                               """AND city_id=(SELECT id FROM boxoffice_app_City where name = "%s" AND state = "%s") """ \
-                              """AND dates = "%s") """ \
+                              """AND dates = "%s" AND create_date = "%s") """ \
                               """AND promoter_id = (SELECT id """ \
                               """FROM boxoffice_app_Promoter """ \
                               """WHERE name = "%s"); """ \
-                              % (artist_event, venue, city, state, date_list, promoter)
+                              % (artist_event, venue, city, state, date_list, update_date, promoter)
                 cursor.execute(check_query)
                 for row in cursor:
                     if row[0] > 0:
@@ -328,11 +341,11 @@ class BoxLocalDatabase:
                                 """WHERE artist_event_id=(SELECT id FROM boxoffice_app_ArtistEvent where name = "%s") """ \
                                 """AND venue_id=(SELECT id FROM boxoffice_app_Venue where name = "%s") """ \
                                 """AND city_id=(SELECT id FROM boxoffice_app_City where name = "%s" AND state = "%s") """ \
-                                """AND dates = "%s"), """ \
+                                """AND dates = "%s" AND create_date = "%s"), """ \
                                 """(SELECT id """ \
                                 """FROM boxoffice_app_Promoter """ \
                                 """WHERE name = "%s")); """ \
-                                % (artist_event, venue, city, state, date_list, promoter)
+                                % (artist_event, venue, city, state, date_list, update_date, promoter)
 
                         cursor.execute(query)
                         self.db.commit()
@@ -354,6 +367,7 @@ class BoxLocalDatabase:
             city = city_list[0]
             state = city_list[1]
             date_list = item['date']
+            update_date = item["create_date"]
 
             prices_list = BoxString.normalize_prices(item['prices'])
             for price in prices_list:
@@ -364,11 +378,11 @@ class BoxLocalDatabase:
                               """WHERE artist_event_id=(SELECT id FROM boxoffice_app_ArtistEvent where name = "%s") """ \
                               """AND venue_id=(SELECT id FROM boxoffice_app_Venue where name = "%s") """ \
                               """AND city_id=(SELECT id FROM boxoffice_app_City where name = "%s" AND state = "%s") """ \
-                              """AND dates = "%s") """ \
+                              """AND dates = "%s" AND create_date = "%s") """ \
                               """AND price_id = (SELECT id """ \
                               """FROM boxoffice_app_Price """ \
                               """WHERE price = "%s"); """ \
-                              % (artist_event, venue, city, state, date_list, price)
+                              % (artist_event, venue, city, state, date_list, update_date, price)
                 cursor.execute(check_query)
                 for row in cursor:
                     if row[0] > 0:
@@ -380,11 +394,11 @@ class BoxLocalDatabase:
                                 """WHERE artist_event_id=(SELECT id FROM boxoffice_app_ArtistEvent where name = "%s") """ \
                                 """AND venue_id=(SELECT id FROM boxoffice_app_Venue where name = "%s") """ \
                                 """AND city_id=(SELECT id FROM boxoffice_app_City where name = "%s" AND state = "%s") """ \
-                                """AND dates = "%s"), """ \
+                                """AND dates = "%s" AND create_date = "%s"), """ \
                                 """(SELECT id """ \
                                 """FROM boxoffice_app_Price """ \
                                 """WHERE price = "%s")); """ \
-                                % (artist_event, venue, city, state, date_list, price)
+                                % (artist_event, venue, city, state, date_list, update_date, price)
 
                         cursor.execute(query)
                         self.db.commit()
@@ -405,6 +419,7 @@ class BoxLocalDatabase:
         city = city_list[0]
         state = city_list[1]
         date_list = item['date']
+        update_date = item['create_date']
 
         parser = BoxDateParser()
         array = parser.get_date_string(date_list)
@@ -422,9 +437,9 @@ class BoxLocalDatabase:
                                       """WHERE artist_event_id=(SELECT id FROM boxoffice_app_ArtistEvent where name = "%s") """ \
                                       """AND venue_id=(SELECT id FROM boxoffice_app_Venue where name = "%s") """ \
                                       """AND city_id=(SELECT id FROM boxoffice_app_City where name = "%s" AND state = "%s") """ \
-                                      """AND dates = "%s") """ \
+                                      """AND dates = "%s" AND create_date = "%s") """ \
                                       """AND event_date = "%s-%s-%s"; """ \
-                                      % (artist_event, venue, city, state, date_list, dateObj[0], dateObj[1], date)
+                                      % (artist_event, venue, city, state, date_list, update_date, dateObj[0], dateObj[1], date)
                         cursor.execute(check_query)
                         for row in cursor:
                             if row[0] > 0:
@@ -436,8 +451,8 @@ class BoxLocalDatabase:
                                         """WHERE artist_event_id=(SELECT id FROM boxoffice_app_ArtistEvent where name = "%s") """ \
                                         """AND venue_id=(SELECT id FROM boxoffice_app_Venue where name = "%s") """ \
                                         """AND city_id=(SELECT id FROM boxoffice_app_City where name = "%s" AND state = "%s") """ \
-                                        """AND dates = "%s"), "%s-%s-%s"); """ \
-                                        % (artist_event, venue, city, state, date_list, dateObj[0], dateObj[1], date)
+                                        """AND dates = "%s" AND create_date = "%s"), "%s-%s-%s"); """ \
+                                        % (artist_event, venue, city, state, date_list, update_date, dateObj[0], dateObj[1], date)
 
                                 cursor.execute(query)
                                 self.db.commit()
@@ -449,7 +464,28 @@ class BoxLocalDatabase:
                 print item
                 self.create_error_log('Date', item)
 
+    def update_updatelog(self, item):
+        cursor = self.db.cursor()
+
+        update_date = item["create_date"]
+
+        query = "SELECT COUNT(*) FROM boxoffice_app_UpdateLog"
+        cursor.execute(query)
+        for row in cursor:
+            if row[0] > 0:
+                query = "UPDATE boxoffice_app_UpdateLog SET last_update = '%s' WHERE id = 1" % update_date
+                cursor.execute(query)
+            else:
+                query = "INSERT INTO boxoffice_app_UpdateLog VALUES (NULL, '%s')" % update_date
+                cursor.execute(query)
+                self.db.commit()
+
+
+
     def insert_item(self, item):
+
+        self.update_updatelog(item)
+
         self.artist_event_insert_item(item)
         self.city_insert_item(item)
         self.venue_insert_item(item)
@@ -478,7 +514,7 @@ class BoxLocalDatabase:
         artist_event = item['artist_event']
         prices = item['prices']
         gross_sales = item['gross_sales']
-
+        create_date = item['create_date']
 
 
         # query = "CREATE TABLE IF NOT EXISTS  Error_Log( " \
@@ -498,25 +534,22 @@ class BoxLocalDatabase:
         #         + '); '
 
         try:
-            query = """INSERT INTO boxoffice_app_ErrorLog VALUES (NULL, "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s")""" \
+            query = """INSERT INTO boxoffice_app_ErrorLog VALUES (NULL, "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s")""" \
                     % (table, artist_event, city, venue, attend_cap, gross_sales, shows_sellout, rank, dates, prices,
-                       promoters)
+                       promoters, create_date)
             cursor.execute(query)
             self.db.commit()
         except ValueError as e:
             print e
 
 
-test = BoxLocalDatabase()
-# test.drop_all_table()
-
-# test.insert_item(item)
-
-# test.create_tables()
-with open("test.json") as json_file:
-    json_data = json.load(json_file)
-
-    test_list = json_data
-    for string in test_list:
-        print(string)
-        # test.insert_item(string)
+# test = BoxLocalDatabase()
+#
+# with open("test.json") as json_file:
+#     json_data = json.load(json_file)
+#
+#     test_list = json_data
+#     for string in test_list:
+#         print(string)
+#         string['create_date'] = "2015-12-14 17:41"
+#         test.insert_item(string)

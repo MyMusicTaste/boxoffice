@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import scrapy
 from ..items import BoxofficeItem
+import datetime
+from time import strftime
 
 class BOSpider(scrapy.Spider):
     name = "bospider"
@@ -8,6 +10,8 @@ class BOSpider(scrapy.Spider):
     start_urls = [
         "http://www.billboard.com/biz/current-boxscore/",
     ]
+
+    update_date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
     def parse(self, response):
         table = response.xpath('//table[@class="boxscore_table"]')
@@ -25,4 +29,5 @@ class BOSpider(scrapy.Spider):
             item['shows_sellout'] = row_items[7].xpath('text()').extract()[0]
             item['prices'] = row_items[8].xpath('text()').extract()[0]
             item['promoters'] = row_items[9].xpath('text()').extract()[0]
+            item['create_date'] = self.update_date
             yield item
