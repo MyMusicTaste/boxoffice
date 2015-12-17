@@ -8,7 +8,7 @@ class BoxofficePipeline(object):
 
     def process_item(self, item, spider):
         db = BoxLocalDatabase()
-        db.create_tables()
+#        db.create_tables()
         db.insert_item(item)
 
         # print item['shows_sellout']
