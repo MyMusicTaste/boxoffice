@@ -13,8 +13,8 @@ from django.forms.models import model_to_dict
 def get_date(request, sdate=None, ldate=None):
     return_list = list()
 
-    update_log = models.UpdateLog.objects.get(pk=1)
-    update_date = update_log.last_update
+    # update_log = models.UpdateLog.objects.get(pk=1)
+    # update_date = update_log.last_update
 
     if sdate is None:
         date_list = models.Date.objects.values('event_id').all().distinct()
@@ -22,8 +22,8 @@ def get_date(request, sdate=None, ldate=None):
         return_list = list()
         for date in date_list:
             event = models.Event.objects.get(pk=date['event_id'])
-            if event.create_date == update_date:
-                return_list.append(get_event_dict(event))
+            # if event.create_date == update_date:
+            return_list.append(get_event_dict(event))
 
     else:
         default_date = datetime.datetime(datetime.MINYEAR, 1, 1)
@@ -34,8 +34,8 @@ def get_date(request, sdate=None, ldate=None):
             date_list = models.Date.objects.values('event_id').filter(event_date__gte=first_date).distinct()
             for date in date_list:
                 event = models.Event.objects.get(pk=date['event_id'])
-                if event.create_date == update_date:
-                    return_list.append(get_event_dict(event))
+                # if event.create_date == update_date:
+                return_list.append(get_event_dict(event))
 
         else:
             ldt = parser.parse(ldate, default=default_date, fuzzy=True)
@@ -46,8 +46,8 @@ def get_date(request, sdate=None, ldate=None):
 
             for date in date_list:
                 event = models.Event.objects.get(pk=date['event_id'])
-                if event.create_date == update_date:
-                    return_list.append(get_event_dict(event))
+                # if event.create_date == update_date:
+                return_list.append(get_event_dict(event))
 
     n = json.dumps(return_list)
     json_string = '{"Dates" : %s}' % n
@@ -107,37 +107,37 @@ def get_promoter(request, promoter_id=0):
 def get_event(request, parameter=None, param_id=None):
     return_dict = list()
 
-    update_log = models.UpdateLog.objects.get(pk=1)
-    update_date = update_log.last_update
+    # update_log = models.UpdateLog.objects.get(pk=1)
+    # update_date = update_log.last_update
 
     if parameter == None:
         if param_id == None:
-            event_list = models.Event.objects.all()
+            event_list = models.Event.objects.all().order_by('-sale')
             for event in event_list:
-                if event.create_date == update_date:
-                    return_dict.append(get_event_dict(event))
+                # if event.create_date == update_date:
+                return_dict.append(get_event_dict(event))
         else:
             event = models.Event.objects.get(pk=param_id)
             return_dict.append(get_event_dict(event))
 
     else:
         if parameter == "artist":
-            event_list = models.Event.objects.filter(artist_event_id=param_id)
+            event_list = models.Event.objects.filter(artist_event_id=param_id).order_by('-sale')
             return_dict = get_distinct_event_list(event_list)
 
 
         elif parameter == 'venue':
-            event_list = models.Event.objects.filter(venue_id=param_id)
+            event_list = models.Event.objects.filter(venue_id=param_id).order_by('-sale')
             return_dict = get_distinct_event_list(event_list)
 
         elif parameter == 'city':
-            event_list = models.Event.objects.filter(city_id=param_id)
+            event_list = models.Event.objects.filter(city_id=param_id).order_by('-sale')
             return_dict = get_distinct_event_list(event_list)
 
         elif parameter == 'promoter':
             promoter_list = models.EventPromoter.objects.filter(promoter_id=param_id)
             for event_promoter in promoter_list:
-                event_list = models.Event.objects.filter(id=event_promoter.event_id)
+                event_list = models.Event.objects.filter(id=event_promoter.event_id).order_by('-sale')
                 return_dict = get_distinct_event_list(event_list)
 
     n = json.dumps(return_dict)
