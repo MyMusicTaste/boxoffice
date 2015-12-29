@@ -11,14 +11,15 @@ class UpdateLog(models.Model):
     def __unicode__(self):
         return self.last_update
 
+
 class ArtistEvent(models.Model):
     name = models.CharField(max_length=512)
 
     class Admin:
         pass
 
-    def __unicode__(self):
-        return self.name
+    # def __unicode__(self):
+    #     return self.name
 
 
 class City(models.Model):
@@ -77,6 +78,9 @@ class Event(models.Model):
 
     class Admin:
         pass
+
+    def __repr__(self):
+        return self
 
 
 class EventPromoter(models.Model):
