@@ -102,12 +102,23 @@ else:
         'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'boxoffice_database',
-            'USER': 'boxoffice',
-            'PASSWORD': 'mmtboxoffice1234',
+            'USER': 'root',
+            'PASSWORD': '1234',
             'HOST': 'localhost',
-            'PORT': '3306',
+            'PORT': '8000',
+        }
     }
-}
+# else:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.mysql',
+#             'NAME': 'boxoffice_database',
+#             'USER': 'boxoffice',
+#             'PASSWORD': 'mmtboxoffice1234',
+#             'HOST': 'localhost',
+#             'PORT': '3306',
+#     }
+# }
 
 
 # Internationalization
