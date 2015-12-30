@@ -6,12 +6,6 @@ import MySQLdb
 from DateParse import BoxDateParser
 from BoxString import BoxString
 
-import datetime
-from time import strftime
-
-import json
-
-
 class BoxLocalDatabase:
     # db = MySQLdb.connect('localhost', 'boxoffice', 'mmtboxoffice1234', 'boxoffice_database')
     db = MySQLdb.connect('localhost', 'root', '1234', 'boxoffice_database')
@@ -542,7 +536,6 @@ class BoxLocalDatabase:
             self.db.commit()
         except ValueError as e:
             print e
-
 
 
 
