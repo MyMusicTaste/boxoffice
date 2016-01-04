@@ -2,9 +2,9 @@
 
 import MySQLdb
 # from items import BoxofficeItem
-
 from DateParse import BoxDateParser
 from BoxString import BoxString
+
 
 class BoxLocalDatabase:
     # db = MySQLdb.connect('localhost', 'boxoffice', 'mmtboxoffice1234', 'boxoffice_database')
@@ -236,7 +236,6 @@ class BoxLocalDatabase:
                     query = """INSERT INTO boxoffice_app_price (price) VALUES ("%s");""" % price
                     cursor.execute(query)
                     self.db.commit()
-
 
     # ---------------------------------생각 좀 해보자 ---------------------------------------------------------------------
     def event_insert_item(self, item):
@@ -475,8 +474,6 @@ class BoxLocalDatabase:
                 cursor.execute(query)
                 self.db.commit()
 
-
-
     def insert_item(self, item):
 
         self.update_updatelog(item)
@@ -536,7 +533,6 @@ class BoxLocalDatabase:
             self.db.commit()
         except ValueError as e:
             print e
-
 
 
 # test = BoxLocalDatabase()

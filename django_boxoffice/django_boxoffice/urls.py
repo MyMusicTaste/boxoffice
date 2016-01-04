@@ -15,39 +15,27 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-
+admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
-    # url(r'^boxoffice/date/$', 'django_boxoffice.boxoffice_app.views.get_date'),
-    # url(r'^boxoffice/date/(?P<sdate>[0-9]+)/$', 'django_boxoffice.boxoffice_app.views.get_date'),
-    # url(r'^boxoffice/date/(?P<sdate>[0-9]+)/(?P<ldate>[0-9]+)/$', 'django_boxoffice.boxoffice_app.views.get_date'),
-
-    # url(r'^boxoffice/artist/$', 'django_boxoffice.boxoffice_app.views.get_artist_event'),
-    # url(r'^boxoffice/artist/(?P<artist_id>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_artist_event'),
-    # url(r'^boxoffice/promoter/$', 'django_boxoffice.boxoffice_app.views.get_promoter'),
-    # url(r'^boxoffice/promoter/(?P<promoter_id>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_promoter'),
-    #
-    # url(r'^boxoffice/event/$', 'django_boxoffice.boxoffice_app.views.get_event'),
-    # url(r'^boxoffice/event/(?P<param_id>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_event'),
-    # url(r'^boxoffice/event/(?P<parameter>[a-z]+)/(?P<param_id>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_event'),
-
     url(r'^boxoffice/artists/$', 'django_boxoffice.boxoffice_app.views.get_artists'),
     url(r'^boxoffice/artists/(?P<id_numb>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_artists'),
-    url(r'^boxoffice/artists/(?P<id_numb>\d+)/event/$', 'django_boxoffice.boxoffice_app.views.get_artist_event'),
+    url(r'^boxoffice/artists/(?P<id_numb>\d+)/events/$', 'django_boxoffice.boxoffice_app.views.get_artist_event'),
 
     url(r'^boxoffice/promoters/$', 'django_boxoffice.boxoffice_app.views.get_promoters'),
     url(r'^boxoffice/promoters/(?P<id_numb>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_promoters'),
-    url(r'^boxoffice/promoters/(?P<id_numb>\d+)/event/$', 'django_boxoffice.boxoffice_app.views.get_promoter_event'),
+    url(r'^boxoffice/promoters/(?P<id_numb>\d+)/events/$', 'django_boxoffice.boxoffice_app.views.get_promoter_event'),
 
     url(r'^boxoffice/cities/$', 'django_boxoffice.boxoffice_app.views.get_cities'),
     url(r'^boxoffice/cities/(?P<id_numb>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_cities'),
-    url(r'^boxoffice/cities/(?P<id_numb>\d+)/event/$', 'django_boxoffice.boxoffice_app.views.get_city_event'),
+    url(r'^boxoffice/cities/(?P<id_numb>\d+)/events/$', 'django_boxoffice.boxoffice_app.views.get_city_event'),
 
     url(r'^boxoffice/events/$', 'django_boxoffice.boxoffice_app.views.get_events'),
     url(r'^boxoffice/events/(?P<id_numb>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_events'),
 
-    url(r'^boxoffice/event_start_date/(?P<s_date>[0-9]+)/$', 'django_boxoffice.boxoffice_app.views.get_event_dates'),
-    url(r'^boxoffice/event_start_date/(?P<s_date>[0-9]+)/end_date/(?P<e_date>[0-9]+)/$', 'django_boxoffice.boxoffice_app.views.get_event_dates'),
+    url(r'^boxoffice/event_date/$', 'django_boxoffice.boxoffice_app.views.get_event_dates'),
+    # url(r'^boxoffice/event_start_date/(?P<s_date>[0-9]+)/$', 'django_boxoffice.boxoffice_app.views.get_event_dates'),
+    # url(r'^boxoffice/event_start_date/(?P<s_date>[0-9]+)/end_date/(?P<e_date>[0-9]+)/$', 'django_boxoffice.boxoffice_app.views.get_event_dates'),
 ]
