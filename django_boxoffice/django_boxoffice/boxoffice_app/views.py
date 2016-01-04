@@ -100,17 +100,42 @@ def get_city_event(request, id_numb=None):
 
 @api_view(['GET'])
 def get_events(request, id_numb=None):
-    if id_numb:
-        model_all = models.Event.objects.filter(pk=id_numb)
+    if request.query_params:
+        default_date = datetime.datetime(datetime.MINYEAR, 1, 1)
+        paramQueryDict = request.query_params
+
+        if paramQueryDict['start_date']:
+            sdt = parser.parse(paramQueryDict['start_date'], default=default_date, fuzzy=True)
+            start_date = sdt.date()
+
+            if paramQueryDict['end_date']:
+                ldt = parser.parse(paramQueryDict['end_date'], default=default_date, fuzzy=True)
+                end_date = ldt.date()
+                date_query = models.Date.objects.values('event_id').filter(event_date__range=[start_date, end_date]).distinct()
+            else:
+                date_query = models.Date.objects.values('event_id').filter(event_date__gte=start_date).distinct()
+
+            date_list = models.Event.objects.filter(pk__in=date_query)
+
+            serializer = serializers.EventSerializer(date_list, many=True)
+            return Response(serializer.data)
+        else:
+            date_query = models.Date.objects.values('event_id').filter(event_date__gte=default_date.date()).distinct()
+            date_list = models.Event.objects.filter(pk__in=date_query)
+            serializer = serializers.EventSerializer(date_list, many=True)
+            return Response(serializer.data)
     else:
-        model_all = models.Event.objects.all()
+        if id_numb:
+            model_all = models.Event.objects.filter(pk=id_numb)
+        else:
+            model_all = models.Event.objects.all()
 
-    if request.method == 'GET':
-        serializer = serializers.EventSerializer(model_all, many=True)
-        return Response(serializer.data)
+        if request.method == 'GET':
+            serializer = serializers.EventSerializer(model_all, many=True)
+            return Response(serializer.data)
 
-    elif request.method == 'POST':
-        return Response(status=status.HTTP_400_BAD_REQUEST)
+        elif request.method == 'POST':
+            return Response(status=status.HTTP_400_BAD_REQUEST)
 
 
 @api_view(['GET'])

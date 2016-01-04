@@ -35,7 +35,7 @@ urlpatterns = [
     url(r'^boxoffice/events/$', 'django_boxoffice.boxoffice_app.views.get_events'),
     url(r'^boxoffice/events/(?P<id_numb>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_events'),
 
-    url(r'^boxoffice/event_date/$', 'django_boxoffice.boxoffice_app.views.get_event_dates'),
+    # url(r'^boxoffice/event_date/$', 'django_boxoffice.boxoffice_app.views.get_event_dates'),
     # url(r'^boxoffice/event_start_date/(?P<s_date>[0-9]+)/$', 'django_boxoffice.boxoffice_app.views.get_event_dates'),
     # url(r'^boxoffice/event_start_date/(?P<s_date>[0-9]+)/end_date/(?P<e_date>[0-9]+)/$', 'django_boxoffice.boxoffice_app.views.get_event_dates'),
 ]
