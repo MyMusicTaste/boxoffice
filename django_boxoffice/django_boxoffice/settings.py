@@ -37,7 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_boxoffice.boxoffice_app',
+    'boxoffice_app',
+    'booking_app',
     'rest_framework',
 )
 

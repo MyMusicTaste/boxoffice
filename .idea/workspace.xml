@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54dbd861-efb2-4a0b-b958-0c7009c20f70" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py" afterPath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.ebextensions/01-django_boxoffice.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.ebextensions/02_python.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/serializers.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/tests.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Boxoffice-server.iml" afterPath="$PROJECT_DIR$/.idea/Boxoffice-server.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py" afterPath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/urls.py" afterPath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/urls.py" />
     </list>
     <ignored path="Boxoffice-server.iws" />
@@ -30,173 +40,30 @@
     <favorites_list name="Boxoffice-server" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="BoxLocalDatabase.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/boxoffice/boxoffice/BoxLocalDatabase.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="539" column="38" selection-start-line="539" selection-start-column="38" selection-end-line="539" selection-end-column="38" />
-                  <folding>
-                    <element signature="e#379#1241#0" expanded="false" />
-                    <element signature="e#1281#6088#0" expanded="false" />
-                    <element signature="e#6269#6798#0" expanded="false" />
-                    <element signature="e#6847#7320#0" expanded="false" />
-                    <element signature="e#7368#7990#0" expanded="false" />
-                    <element signature="e#8043#8658#0" expanded="false" />
-                    <element signature="e#8708#9298#0" expanded="false" />
-                    <element signature="e#9459#12255#0" expanded="false" />
-                    <element signature="e#12314#15334#0" expanded="false" />
-                    <element signature="e#15390#18364#0" expanded="false" />
-                    <element signature="e#18413#21464#0" expanded="false" />
-                    <element signature="e#21512#22058#0" expanded="false" />
-                    <element signature="e#22102#22578#0" expanded="false" />
-                    <element signature="e#22634#24236#0" expanded="false" />
-                    <marker date="1451902639000" expanded="true" signature="429:478" placeholder="DROP TABLE I..." />
-                    <marker date="1451902639000" expanded="true" signature="505:548" placeholder="DROP TABLE I..." />
-                    <marker date="1451902639000" expanded="true" signature="575:620" placeholder="DROP TABLE I..." />
-                    <marker date="1451902639000" expanded="true" signature="647:687" placeholder="DROP TABLE I..." />
-                    <marker date="1451902639000" expanded="true" signature="714:753" placeholder="DROP TABLE I..." />
-                    <marker date="1451902639000" expanded="true" signature="780:820" placeholder="DROP TABLE I..." />
-                    <marker date="1451902639000" expanded="true" signature="847:893" placeholder="DROP TABLE I..." />
-                    <marker date="1451902639000" expanded="true" signature="920:960" placeholder="DROP TABLE I..." />
-                    <marker date="1451902639000" expanded="true" signature="987:1026" placeholder="DROP TABLE I..." />
-                    <marker date="1451902639000" expanded="true" signature="1053:1096" placeholder="DROP TABLE I..." />
-                    <marker date="1451902639000" expanded="true" signature="1422:1642" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1451902639000" expanded="true" signature="1694:2435" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1451902639000" expanded="true" signature="2487:2701" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1451902639000" expanded="true" signature="2753:2961" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1451902639000" expanded="true" signature="3013:3264" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1451902639000" expanded="true" signature="3316:4163" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1451902639000" expanded="true" signature="4215:4426" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1451902639000" expanded="true" signature="4478:4908" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1451902639000" expanded="true" signature="4960:5169" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1451902639000" expanded="true" signature="5221:5640" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1451902639000" expanded="true" signature="5692:6029" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1451902639000" expanded="true" signature="6366:6430" placeholder="SELECT COUNT..boxoffice_app_artistevent..." />
-                    <marker date="1451902639000" expanded="true" signature="6650:6708" placeholder="INSERT INTO boxoffice_app_artistevent..." />
-                    <marker date="1451902639000" expanded="true" signature="6929:6987" placeholder="SELECT COUNT..boxoffice_app_venue..." />
-                    <marker date="1451902639000" expanded="true" signature="7186:7238" placeholder="INSERT INTO boxoffice_app_venue..." />
-                    <marker date="1451902639000" expanded="true" signature="7537:7611" placeholder="SELECT COUNT..boxoffice_app_city..." />
-                    <marker date="1451902639000" expanded="true" signature="7835:7899" placeholder="INSERT INTO boxoffice_app_city..." />
-                    <marker date="1451902639000" expanded="true" signature="8215:8276" placeholder="SELECT COUNT..boxoffice_app_promoter..." />
-                    <marker date="1451902639000" expanded="true" signature="8509:8564" placeholder="INSERT INTO boxoffice_app_promoter..." />
-                    <marker date="1451902639000" expanded="true" signature="8865:8924" placeholder="SELECT COUNT..boxoffice_app_price..." />
-                    <marker date="1451902639000" expanded="true" signature="9148:9201" placeholder="INSERT INTO boxoffice_app_price..." />
-                    <marker date="1451902639000" expanded="true" signature="10294:10898" placeholder="SELECT COUNT..boxoffice_app_event..." />
-                    <marker date="1451902639000" expanded="true" signature="10416:10896" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1451902639000" expanded="true" signature="10564:10622" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1451902639000" expanded="true" signature="10673:10725" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1451902639000" expanded="true" signature="10775:10843" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1451902639000" expanded="true" signature="11244:11665" placeholder="INSERT INTO boxoffice_app_event..." />
-                    <marker date="1451902639000" expanded="true" signature="11365:11423" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1451902639000" expanded="true" signature="11464:11532" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1451902639000" expanded="true" signature="11573:11625" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1451902639000" expanded="true" signature="12803:13643" placeholder="SELECT COUNT..boxoffice_app_eventpromoter..." />
-                    <marker date="1451902639000" expanded="true" signature="12948:13448" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1451902639000" expanded="true" signature="13104:13162" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1451902639000" expanded="true" signature="13217:13269" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1451902639000" expanded="true" signature="13323:13391" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1451902639000" expanded="true" signature="13509:13642" placeholder="SELECT id FR..boxoffice_app_promoter..." />
-                    <marker date="1451902639000" expanded="true" signature="14011:14802" placeholder="INSERT INTO boxoffice_app_eventpromoter..." />
-                    <marker date="1451902639000" expanded="true" signature="14107:14617" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1451902639000" expanded="true" signature="14267:14325" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1451902639000" expanded="true" signature="14382:14434" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1451902639000" expanded="true" signature="14490:14558" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1451902639000" expanded="true" signature="14663:14800" placeholder="SELECT id FR..boxoffice_app_promoter..." />
-                    <marker date="1451902639000" expanded="true" signature="15864:16696" placeholder="SELECT COUNT..boxoffice_app_eventprice..." />
-                    <marker date="1451902639000" expanded="true" signature="16006:16506" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1451902639000" expanded="true" signature="16162:16220" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1451902639000" expanded="true" signature="16275:16327" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1451902639000" expanded="true" signature="16381:16449" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1451902639000" expanded="true" signature="16564:16695" placeholder="SELECT id FR..boxoffice_app_price..." />
-                    <marker date="1451902639000" expanded="true" signature="17055:17841" placeholder="INSERT INTO boxoffice_app_eventprice..." />
-                    <marker date="1451902639000" expanded="true" signature="17148:17658" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1451902639000" expanded="true" signature="17308:17366" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1451902639000" expanded="true" signature="17423:17475" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1451902639000" expanded="true" signature="17531:17599" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1451902639000" expanded="true" signature="17704:17839" placeholder="SELECT id FR..boxoffice_app_price..." />
-                    <marker date="1451902639000" expanded="true" signature="19018:19787" placeholder="SELECT COUNT..boxoffice_app_date..." />
-                    <marker date="1451902639000" expanded="true" signature="19170:19710" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1451902639000" expanded="true" signature="19342:19400" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1451902639000" expanded="true" signature="19463:19515" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1451902639000" expanded="true" signature="19577:19645" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1451902639000" expanded="true" signature="20230:20890" placeholder="INSERT INTO boxoffice_app_date..." />
-                    <marker date="1451902639000" expanded="true" signature="20325:20875" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1451902639000" expanded="true" signature="20501:20559" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1451902639000" expanded="true" signature="20624:20676" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1451902639000" expanded="true" signature="20740:20808" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1451902639000" expanded="true" signature="21599:21643" placeholder="SELECT COUNT..boxoffice_app_updatelog..." />
-                    <marker date="1451902639000" expanded="true" signature="21754:21820" placeholder="UPDATE boxof..." />
-                    <marker date="1451902639000" expanded="true" signature="21917:21972" placeholder="INSERT INTO boxoffice_app_updatelog..." />
-                    <marker date="1451902639000" expanded="true" signature="23828:23948" placeholder="INSERT INTO boxoffice_app_errorlog..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/serializers.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#53#91#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.31721196">
-                  <caret line="113" column="66" selection-start-line="113" selection-start-column="66" selection-end-line="113" selection-end-column="66" />
-                  <folding>
-                    <element signature="e#24#37#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="44" column="71" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="1.2859175">
-                  <caret line="117" column="15" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.542246">
+              <caret line="114" column="27" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+              <folding>
+                <element signature="e#625#666#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -213,11 +80,15 @@
       <list>
         <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/admin.py" />
         <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py" />
-        <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py" />
         <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/serializers.py" />
         <option value="$PROJECT_DIR$/boxoffice/boxoffice/__init__.py" />
         <option value="$PROJECT_DIR$/boxoffice/boxoffice/BoxLocalDatabase.py" />
         <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/boxoffice_app/serializers.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/booking_app/models.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/booking_app/views.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/booking_app/serializers.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py" />
         <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/urls.py" />
       </list>
     </option>
@@ -228,10 +99,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2560" />
-    <option name="y" value="383" />
+    <option name="x" value="320" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="height" value="1079" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -258,6 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -305,49 +177,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="django_boxoffice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="django_boxoffice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Boxoffice-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Boxoffice-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boxoffice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Boxoffice-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Boxoffice-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boxoffice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="boxoffice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,6 +199,11 @@
         <option name="myAddSourceRoots" value="true" />
       </console-settings>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/django_boxoffice" />
+    </key>
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -1676,28 +1516,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2560" y="383" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
+    <frame x="320" y="23" width="1920" height="1079" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13951011" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20234291" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18104367" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837406" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837406" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17321998" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30899307" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22316684" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837406" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837406" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30818278" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1723,11 +1563,19 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="43" />
+      <option name="time" value="44" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="2" selection-start-line="87" selection-start-column="2" selection-end-line="87" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/MySQLdb/connections.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1843,21 +1691,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1984,21 +1829,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2125,162 +1967,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="87" column="2" selection-start-line="87" selection-start-column="2" selection-end-line="87" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/MySQLdb/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/boxoffice/boxoffice/BoxLocalDatabase.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#379#1241#0" expanded="false" />
-            <element signature="e#1281#6088#0" expanded="false" />
-            <element signature="e#6269#6798#0" expanded="false" />
-            <element signature="e#6847#7320#0" expanded="false" />
-            <element signature="e#7368#7990#0" expanded="false" />
-            <element signature="e#8043#8658#0" expanded="false" />
-            <element signature="e#8708#9298#0" expanded="false" />
-            <element signature="e#9459#12255#0" expanded="false" />
-            <element signature="e#12314#15334#0" expanded="false" />
-            <element signature="e#15390#18364#0" expanded="false" />
-            <element signature="e#18413#21464#0" expanded="false" />
-            <element signature="e#21512#22058#0" expanded="false" />
-            <element signature="e#22102#22578#0" expanded="false" />
-            <element signature="e#22634#24236#0" expanded="false" />
-            <marker date="1451902639000" expanded="true" signature="429:478" placeholder="DROP TABLE I..." />
-            <marker date="1451902639000" expanded="true" signature="505:548" placeholder="DROP TABLE I..." />
-            <marker date="1451902639000" expanded="true" signature="575:620" placeholder="DROP TABLE I..." />
-            <marker date="1451902639000" expanded="true" signature="647:687" placeholder="DROP TABLE I..." />
-            <marker date="1451902639000" expanded="true" signature="714:753" placeholder="DROP TABLE I..." />
-            <marker date="1451902639000" expanded="true" signature="780:820" placeholder="DROP TABLE I..." />
-            <marker date="1451902639000" expanded="true" signature="847:893" placeholder="DROP TABLE I..." />
-            <marker date="1451902639000" expanded="true" signature="920:960" placeholder="DROP TABLE I..." />
-            <marker date="1451902639000" expanded="true" signature="987:1026" placeholder="DROP TABLE I..." />
-            <marker date="1451902639000" expanded="true" signature="1053:1096" placeholder="DROP TABLE I..." />
-            <marker date="1451902639000" expanded="true" signature="1422:1642" placeholder="CREATE TABLE..IF..." />
-            <marker date="1451902639000" expanded="true" signature="1694:2435" placeholder="CREATE TABLE..IF..." />
-            <marker date="1451902639000" expanded="true" signature="2487:2701" placeholder="CREATE TABLE..IF..." />
-            <marker date="1451902639000" expanded="true" signature="2753:2961" placeholder="CREATE TABLE..IF..." />
-            <marker date="1451902639000" expanded="true" signature="3013:3264" placeholder="CREATE TABLE..IF..." />
-            <marker date="1451902639000" expanded="true" signature="3316:4163" placeholder="CREATE TABLE..IF..." />
-            <marker date="1451902639000" expanded="true" signature="4215:4426" placeholder="CREATE TABLE..IF..." />
-            <marker date="1451902639000" expanded="true" signature="4478:4908" placeholder="CREATE TABLE..IF..." />
-            <marker date="1451902639000" expanded="true" signature="4960:5169" placeholder="CREATE TABLE..IF..." />
-            <marker date="1451902639000" expanded="true" signature="5221:5640" placeholder="CREATE TABLE..IF..." />
-            <marker date="1451902639000" expanded="true" signature="5692:6029" placeholder="CREATE TABLE..IF..." />
-            <marker date="1451902639000" expanded="true" signature="6366:6430" placeholder="SELECT COUNT..boxoffice_app_artistevent..." />
-            <marker date="1451902639000" expanded="true" signature="6650:6708" placeholder="INSERT INTO boxoffice_app_artistevent..." />
-            <marker date="1451902639000" expanded="true" signature="6929:6987" placeholder="SELECT COUNT..boxoffice_app_venue..." />
-            <marker date="1451902639000" expanded="true" signature="7186:7238" placeholder="INSERT INTO boxoffice_app_venue..." />
-            <marker date="1451902639000" expanded="true" signature="7537:7611" placeholder="SELECT COUNT..boxoffice_app_city..." />
-            <marker date="1451902639000" expanded="true" signature="7835:7899" placeholder="INSERT INTO boxoffice_app_city..." />
-            <marker date="1451902639000" expanded="true" signature="8215:8276" placeholder="SELECT COUNT..boxoffice_app_promoter..." />
-            <marker date="1451902639000" expanded="true" signature="8509:8564" placeholder="INSERT INTO boxoffice_app_promoter..." />
-            <marker date="1451902639000" expanded="true" signature="8865:8924" placeholder="SELECT COUNT..boxoffice_app_price..." />
-            <marker date="1451902639000" expanded="true" signature="9148:9201" placeholder="INSERT INTO boxoffice_app_price..." />
-            <marker date="1451902639000" expanded="true" signature="10294:10898" placeholder="SELECT COUNT..boxoffice_app_event..." />
-            <marker date="1451902639000" expanded="true" signature="10416:10896" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1451902639000" expanded="true" signature="10564:10622" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1451902639000" expanded="true" signature="10673:10725" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1451902639000" expanded="true" signature="10775:10843" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1451902639000" expanded="true" signature="11244:11665" placeholder="INSERT INTO boxoffice_app_event..." />
-            <marker date="1451902639000" expanded="true" signature="11365:11423" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1451902639000" expanded="true" signature="11464:11532" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1451902639000" expanded="true" signature="11573:11625" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1451902639000" expanded="true" signature="12803:13643" placeholder="SELECT COUNT..boxoffice_app_eventpromoter..." />
-            <marker date="1451902639000" expanded="true" signature="12948:13448" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1451902639000" expanded="true" signature="13104:13162" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1451902639000" expanded="true" signature="13217:13269" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1451902639000" expanded="true" signature="13323:13391" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1451902639000" expanded="true" signature="13509:13642" placeholder="SELECT id FR..boxoffice_app_promoter..." />
-            <marker date="1451902639000" expanded="true" signature="14011:14802" placeholder="INSERT INTO boxoffice_app_eventpromoter..." />
-            <marker date="1451902639000" expanded="true" signature="14107:14617" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1451902639000" expanded="true" signature="14267:14325" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1451902639000" expanded="true" signature="14382:14434" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1451902639000" expanded="true" signature="14490:14558" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1451902639000" expanded="true" signature="14663:14800" placeholder="SELECT id FR..boxoffice_app_promoter..." />
-            <marker date="1451902639000" expanded="true" signature="15864:16696" placeholder="SELECT COUNT..boxoffice_app_eventprice..." />
-            <marker date="1451902639000" expanded="true" signature="16006:16506" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1451902639000" expanded="true" signature="16162:16220" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1451902639000" expanded="true" signature="16275:16327" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1451902639000" expanded="true" signature="16381:16449" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1451902639000" expanded="true" signature="16564:16695" placeholder="SELECT id FR..boxoffice_app_price..." />
-            <marker date="1451902639000" expanded="true" signature="17055:17841" placeholder="INSERT INTO boxoffice_app_eventprice..." />
-            <marker date="1451902639000" expanded="true" signature="17148:17658" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1451902639000" expanded="true" signature="17308:17366" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1451902639000" expanded="true" signature="17423:17475" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1451902639000" expanded="true" signature="17531:17599" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1451902639000" expanded="true" signature="17704:17839" placeholder="SELECT id FR..boxoffice_app_price..." />
-            <marker date="1451902639000" expanded="true" signature="19018:19787" placeholder="SELECT COUNT..boxoffice_app_date..." />
-            <marker date="1451902639000" expanded="true" signature="19170:19710" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1451902639000" expanded="true" signature="19342:19400" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1451902639000" expanded="true" signature="19463:19515" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1451902639000" expanded="true" signature="19577:19645" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1451902639000" expanded="true" signature="20230:20890" placeholder="INSERT INTO boxoffice_app_date..." />
-            <marker date="1451902639000" expanded="true" signature="20325:20875" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1451902639000" expanded="true" signature="20501:20559" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1451902639000" expanded="true" signature="20624:20676" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1451902639000" expanded="true" signature="20740:20808" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1451902639000" expanded="true" signature="21599:21643" placeholder="SELECT COUNT..boxoffice_app_updatelog..." />
-            <marker date="1451902639000" expanded="true" signature="21754:21820" placeholder="UPDATE boxof..." />
-            <marker date="1451902639000" expanded="true" signature="21917:21972" placeholder="INSERT INTO boxoffice_app_updatelog..." />
-            <marker date="1451902639000" expanded="true" signature="23828:23948" placeholder="INSERT INTO boxoffice_app_errorlog..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2407,25 +2105,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/tests.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2436,13 +2124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8003328">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48582995">
-          <caret line="24" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2537,36 +2218,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/serializers.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#53#91#0" expanded="true" />
-          </folding>
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="71" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2859175">
-          <caret line="117" column="15" selection-start-line="117" selection-start-column="15" selection-end-line="117" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.011783189">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.01836969">
+          <caret line="75" column="39" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/booking_app/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/booking_app/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27554536">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/booking_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.96555686">
+          <caret line="77" column="59" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/booking_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10332951">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/boxoffice/boxoffice/BoxLocalDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="539" column="38" selection-start-line="539" selection-start-column="38" selection-end-line="539" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.8266361">
+          <caret line="542" column="27" selection-start-line="542" selection-start-column="27" selection-end-line="542" selection-end-column="27" />
           <folding>
             <element signature="e#379#1241#0" expanded="false" />
             <element signature="e#1281#6088#0" expanded="false" />
@@ -2667,18 +2394,18 @@
     <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-          <folding />
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+          <folding>
+            <element signature="e#625#666#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31721196">
-          <caret line="113" column="66" selection-start-line="113" selection-start-column="66" selection-end-line="113" selection-end-column="66" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.542246">
+          <caret line="114" column="27" selection-start-line="114" selection-start-column="27" selection-end-line="114" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
