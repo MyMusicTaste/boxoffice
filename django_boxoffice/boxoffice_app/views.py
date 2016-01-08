@@ -104,33 +104,40 @@ def get_city_event(request, id_numb=None):
 def get_events(request, id_numb=None):
     if request.query_params:
         default_date = datetime.datetime(datetime.MINYEAR, 1, 1)
-        paramQueryDict = request.query_params
+        paramQueryDict = dict(request.query_params.iterlists())
 
-        if paramQueryDict['start_date']:
-            sdt = parser.parse(paramQueryDict['start_date'], default=default_date, fuzzy=True)
+        if paramQueryDict.has_key('start_date'):
+            sdt = parser.parse(request.query_params['start_date'], default=default_date, fuzzy=True)
             start_date = sdt.date()
 
-            if paramQueryDict['end_date']:
-                ldt = parser.parse(paramQueryDict['end_date'], default=default_date, fuzzy=True)
+            if paramQueryDict.has_key('end_date') and request.query_params['end_date']:
+                ldt = parser.parse(request.query_params['end_date'], default=default_date, fuzzy=True)
                 end_date = ldt.date()
                 date_query = models.Date.objects.values('event_id').filter(event_date__range=[start_date, end_date]).distinct()
             else:
                 date_query = models.Date.objects.values('event_id').filter(event_date__gte=start_date).distinct()
 
-            date_list = models.Event.objects.filter(pk__in=date_query)
+            date_list = models.Event.objects.filter(pk__in=date_query).order_by('-sale')
 
             serializer = serializers.EventSerializer(date_list, many=True)
             return Response(serializer.data)
+        elif paramQueryDict.has_key('start_index'):
+            start_index = int(request.query_params['start_index'])
+            end_index = int(request.query_params['end_index'])
+
+            model_all = models.Event.objects.all().order_by('-sale')[start_index:end_index]
+            serializer = serializers.EventSerializer(model_all, many=True)
+            return Response(serializer.data)
         else:
             date_query = models.Date.objects.values('event_id').filter(event_date__gte=default_date.date()).distinct()
-            date_list = models.Event.objects.filter(pk__in=date_query)
+            date_list = models.Event.objects.filter(pk__in=date_query).order_by('-sale')
             serializer = serializers.EventSerializer(date_list, many=True)
             return Response(serializer.data)
     else:
         if id_numb:
             model_all = models.Event.objects.filter(pk=id_numb)
         else:
-            model_all = models.Event.objects.all()
+            model_all = models.Event.objects.all().order_by('-sale')
 
         if request.method == 'GET':
             serializer = serializers.EventSerializer(model_all, many=True)
