@@ -18,8 +18,8 @@ class ArtistEvent(models.Model):
     class Admin:
         pass
 
-    # def __unicode__(self):
-    #     return self.name
+    def __unicode__(self):
+        return self.name
 
 
 class City(models.Model):
@@ -49,8 +49,8 @@ class Price(models.Model):
     class Admin:
         pass
 
-    # def __unicode__(self):
-    #     return '$%s' % self.price
+    def __unicode__(self):
+        return '$%s' % self.price
 
 
 class Promoter(models.Model):
@@ -79,8 +79,8 @@ class Event(models.Model):
     class Admin:
         pass
 
-    # def __unicode__(self):
-    #     return self
+    def __unicode__(self):
+        return '%s' % self.id
 
     # def __repr__(self):
     #     return self
