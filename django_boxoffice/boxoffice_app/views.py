@@ -16,7 +16,6 @@ import serializers
 @authentication_classes((TokenAuthentication,))
 @permission_classes((IsAuthenticated,))
 def get_artists(request, id_numb=None):
-    print(request.auth)
     if id_numb:
         model_all = models.ArtistEvent.objects.filter(pk=id_numb)
     else:
@@ -34,7 +33,6 @@ def get_artists(request, id_numb=None):
 @authentication_classes((TokenAuthentication,))
 @permission_classes((IsAuthenticated,))
 def get_artist_event(request, id_numb=None):
-    print(request.auth)
     if id_numb:
         model_list = models.Event.objects.filter(artist_event_id=id_numb)
     else:
@@ -86,7 +84,6 @@ def get_promoter_event(request, id_numb=None):
 @authentication_classes((TokenAuthentication,))
 @permission_classes((IsAuthenticated,))
 def get_cities(request, id_numb=None):
-    print(request.auth)
     if id_numb:
         model_all = models.City.objects.filter(pk=id_numb)
     else:
@@ -121,7 +118,6 @@ def get_city_event(request, id_numb=None):
 @authentication_classes((TokenAuthentication,))
 @permission_classes((IsAuthenticated,))
 def get_events(request, id_numb=None):
-    print(request.auth)
     if request.query_params:
         default_date = datetime.datetime(datetime.MINYEAR, 1, 1)
         paramQueryDict = dict(request.query_params.iterlists())
