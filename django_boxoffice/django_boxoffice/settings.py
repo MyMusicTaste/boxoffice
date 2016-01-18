@@ -90,10 +90,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'boxoffice_database',
-        'USER': 'root',
-        'PASSWORD': '1234',
+        'USER': 'boxoffice',
+        'PASSWORD': 'mmtboxoffice1234',
         'HOST': 'localhost',
-        'PORT': '8000',
+        'PORT': '3306',
     }
 }
 # else:
