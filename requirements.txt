@@ -18,13 +18,11 @@ enum34==1.1.1
 idna==2.0
 ipaddress==1.0.15
 jmespath==0.9.0
-lxml==3.5.0
 Markdown==2.6.5
 MySQL-python==1.2.5
 pathspec==0.3.3
 pyasn1==0.1.9
 pyasn1-modules==0.0.8
--e git+https://github.com/Eichhoernchen/pybonjour.git@c63b48c1f0ebf0fb20d412a853ecb6b09e29439b#egg=pybonjour-master
 pycparser==2.14
 pyOpenSSL==0.15.1
 python-dateutil==2.4.2
