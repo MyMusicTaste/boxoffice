@@ -15,20 +15,36 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 
-    url(r'^boxoffice/date/$', 'django_boxoffice.boxoffice_app.views.get_date'),
-    url(r'^boxoffice/date/(?P<sdate>[0-9]+)/$', 'django_boxoffice.boxoffice_app.views.get_date'),
-    url(r'^boxoffice/date/(?P<sdate>[0-9]+)/(?P<ldate>[0-9]+)/$', 'django_boxoffice.boxoffice_app.views.get_date'),
+    url(r'^boxoffice/artists/$', 'boxoffice_app.views.get_artists'),
+    url(r'^boxoffice/artists/(?P<id_numb>\d+)/$', 'boxoffice_app.views.get_artists'),
+    url(r'^boxoffice/artists/(?P<id_numb>\d+)/events/$', 'boxoffice_app.views.get_artist_event'),
 
-    url(r'^boxoffice/artist/$', 'django_boxoffice.boxoffice_app.views.get_artist_event'),
-    url(r'^boxoffice/artist/(?P<artist_id>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_artist_event'),
-    url(r'^boxoffice/promoter/$', 'django_boxoffice.boxoffice_app.views.get_promoter'),
-    url(r'^boxoffice/promoter/(?P<promoter_id>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_promoter'),
+    url(r'^boxoffice/promoters/$', 'boxoffice_app.views.get_promoters'),
+    url(r'^boxoffice/promoters/(?P<id_numb>\d+)/$', 'boxoffice_app.views.get_promoters'),
+    url(r'^boxoffice/promoters/(?P<id_numb>\d+)/events/$', 'boxoffice_app.views.get_promoter_event'),
 
-    url(r'^boxoffice/event/$', 'django_boxoffice.boxoffice_app.views.get_event'),
-    url(r'^boxoffice/event/(?P<param_id>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_event'),
-    url(r'^boxoffice/event/(?P<parameter>[a-z]+)/(?P<param_id>\d+)/$', 'django_boxoffice.boxoffice_app.views.get_event'),
+    url(r'^boxoffice/cities/$', 'boxoffice_app.views.get_cities'),
+    url(r'^boxoffice/cities/(?P<id_numb>\d+)/$', 'boxoffice_app.views.get_cities'),
+    url(r'^boxoffice/cities/(?P<id_numb>\d+)/events/$', 'boxoffice_app.views.get_city_event'),
+
+    url(r'^boxoffice/events/$', 'boxoffice_app.views.get_events'),
+    url(r'^boxoffice/events/(?P<id_numb>\d+)/$', 'boxoffice_app.views.get_events'),
+
+    url(r'^bookingAgent/clients/$', 'booking_app.views.get_clients'),
+    url(r'^bookingAgent/clients/(?P<id_numb>\d+)/$', 'booking_app.views.get_clients'),
+    url(r'^bookingAgent/clients/(?P<id_numb>\d+)/representatives/$', 'booking_app.views.get_client_representatives'),
+
+    url(r'^bookingAgent/representatives/$', 'booking_app.views.get_representatives'),
+    url(r'^bookingAgent/representatives/(?P<id_numb>\d+)/$', 'booking_app.views.get_representatives'),
+    url(r'^bookingAgent/representatives/(?P<id_numb>\d+)/clients/$', 'booking_app.views.get_representatives_client'),
+
+    url(r'^bookingAgent/clients_representatives/$', 'booking_app.views.get_clients_representatives'),
+    url(r'^bookingAgent/clients_representatives/(?P<id_numb>\d+)/$', 'booking_app.views.get_clients_representatives'),
+
+    url(r'^boxoffice/user/auth/$', 'django_boxoffice.auth_views.authorization'),
 ]

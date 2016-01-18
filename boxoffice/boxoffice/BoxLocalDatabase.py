@@ -2,19 +2,13 @@
 
 import MySQLdb
 # from items import BoxofficeItem
-
 from DateParse import BoxDateParser
 from BoxString import BoxString
 
-import datetime
-from time import strftime
-
-import json
-
 
 class BoxLocalDatabase:
-    db = MySQLdb.connect('localhost', 'boxoffice', 'mmtboxoffice1234', 'boxoffice_database')
-    # db = MySQLdb.connect('localhost', 'root', '1234', 'boxoffice_database')
+    # db = MySQLdb.connect('localhost', 'boxoffice', 'mmtboxoffice1234', 'boxoffice_database')
+    db = MySQLdb.connect('localhost', 'root', '1234', 'boxoffice_database')
 
     def drop_all_table(self):
 
@@ -242,7 +236,6 @@ class BoxLocalDatabase:
                     query = """INSERT INTO boxoffice_app_price (price) VALUES ("%s");""" % price
                     cursor.execute(query)
                     self.db.commit()
-
 
     # ---------------------------------생각 좀 해보자 ---------------------------------------------------------------------
     def event_insert_item(self, item):
@@ -480,8 +473,6 @@ class BoxLocalDatabase:
                 query = "INSERT INTO boxoffice_app_updatelog VALUES (NULL, '%s')" % update_date
                 cursor.execute(query)
                 self.db.commit()
-
-
 
     def insert_item(self, item):
 

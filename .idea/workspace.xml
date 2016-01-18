@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54dbd861-efb2-4a0b-b958-0c7009c20f70" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Boxoffice-server.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/kokonak.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/boxoffice/boxoffice/BoxLocalDatabase.py" afterPath="$PROJECT_DIR$/boxoffice/boxoffice/BoxLocalDatabase.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py" afterPath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py" afterPath="$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py" />
     </list>
     <ignored path="Boxoffice-server.iws" />
@@ -41,136 +32,49 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.5101351">
-                  <caret line="107" column="25" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+                <state vertical-scroll-proportion="0.21505377">
+                  <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BoxLocalDatabase.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/boxoffice/boxoffice/BoxLocalDatabase.py">
+          <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/urls.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                  <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
                   <folding>
-                    <element signature="e#436#1298#0" expanded="false" />
-                    <element signature="e#1338#6145#0" expanded="false" />
-                    <element signature="e#6326#6855#0" expanded="false" />
-                    <element signature="e#6904#7377#0" expanded="false" />
-                    <element signature="e#7425#8047#0" expanded="false" />
-                    <element signature="e#8100#8715#0" expanded="false" />
-                    <element signature="e#8765#9356#0" expanded="false" />
-                    <marker date="1450338068000" expanded="true" signature="486:535" placeholder="DROP TABLE I..." />
-                    <marker date="1450338068000" expanded="true" signature="562:605" placeholder="DROP TABLE I..." />
-                    <marker date="1450338068000" expanded="true" signature="632:677" placeholder="DROP TABLE I..." />
-                    <marker date="1450338068000" expanded="true" signature="704:744" placeholder="DROP TABLE I..." />
-                    <marker date="1450338068000" expanded="true" signature="771:810" placeholder="DROP TABLE I..." />
-                    <marker date="1450338068000" expanded="true" signature="837:877" placeholder="DROP TABLE I..." />
-                    <marker date="1450338068000" expanded="true" signature="904:950" placeholder="DROP TABLE I..." />
-                    <marker date="1450338068000" expanded="true" signature="977:1017" placeholder="DROP TABLE I..." />
-                    <marker date="1450338068000" expanded="true" signature="1044:1083" placeholder="DROP TABLE I..." />
-                    <marker date="1450338068000" expanded="true" signature="1110:1153" placeholder="DROP TABLE I..." />
-                    <marker date="1450338068000" expanded="true" signature="1479:1699" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1450338068000" expanded="true" signature="1751:2492" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1450338068000" expanded="true" signature="2544:2758" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1450338068000" expanded="true" signature="2810:3018" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1450338068000" expanded="true" signature="3070:3321" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1450338068000" expanded="true" signature="3373:4220" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1450338068000" expanded="true" signature="4272:4483" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1450338068000" expanded="true" signature="4535:4965" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1450338068000" expanded="true" signature="5017:5226" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1450338068000" expanded="true" signature="5278:5697" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1450338068000" expanded="true" signature="5749:6086" placeholder="CREATE TABLE..IF..." />
-                    <marker date="1450338068000" expanded="true" signature="6423:6487" placeholder="SELECT COUNT..boxoffice_app_artistevent..." />
-                    <marker date="1450338068000" expanded="true" signature="6707:6765" placeholder="INSERT INTO boxoffice_app_artistevent..." />
-                    <marker date="1450338068000" expanded="true" signature="6986:7044" placeholder="SELECT COUNT..boxoffice_app_venue..." />
-                    <marker date="1450338068000" expanded="true" signature="7243:7295" placeholder="INSERT INTO boxoffice_app_venue..." />
-                    <marker date="1450338068000" expanded="true" signature="7594:7668" placeholder="SELECT COUNT..boxoffice_app_city..." />
-                    <marker date="1450338068000" expanded="true" signature="7892:7956" placeholder="INSERT INTO boxoffice_app_city..." />
-                    <marker date="1450338068000" expanded="true" signature="8272:8333" placeholder="SELECT COUNT..boxoffice_app_promoter..." />
-                    <marker date="1450338068000" expanded="true" signature="8566:8621" placeholder="INSERT INTO boxoffice_app_promoter..." />
-                    <marker date="1450338068000" expanded="true" signature="8922:8981" placeholder="SELECT COUNT..boxoffice_app_price..." />
-                    <marker date="1450338068000" expanded="true" signature="9205:9258" placeholder="INSERT INTO boxoffice_app_price..." />
-                    <marker date="1450338068000" expanded="true" signature="10352:10956" placeholder="SELECT COUNT..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="10474:10954" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="10474:10955" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="10622:10680" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1450338068000" expanded="true" signature="10731:10783" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1450338068000" expanded="true" signature="10833:10901" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1450338068000" expanded="true" signature="11302:11723" placeholder="INSERT INTO boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="11423:11481" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1450338068000" expanded="true" signature="11522:11590" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1450338068000" expanded="true" signature="11631:11683" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1450338068000" expanded="true" signature="12861:13701" placeholder="SELECT COUNT..boxoffice_app_eventpromoter..." />
-                    <marker date="1450338068000" expanded="true" signature="13006:13506" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="13006:13507" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="13162:13220" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1450338068000" expanded="true" signature="13275:13327" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1450338068000" expanded="true" signature="13381:13449" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1450338068000" expanded="true" signature="13567:13700" placeholder="SELECT id FR..boxoffice_app_promoter..." />
-                    <marker date="1450338068000" expanded="true" signature="14069:14860" placeholder="INSERT INTO boxoffice_app_eventpromoter..." />
-                    <marker date="1450338068000" expanded="true" signature="14165:14675" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="14165:14676" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="14325:14383" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1450338068000" expanded="true" signature="14440:14492" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1450338068000" expanded="true" signature="14548:14616" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1450338068000" expanded="true" signature="14721:14858" placeholder="SELECT id FR..boxoffice_app_promoter..." />
-                    <marker date="1450338068000" expanded="true" signature="15922:16754" placeholder="SELECT COUNT..boxoffice_app_eventprice..." />
-                    <marker date="1450338068000" expanded="true" signature="16064:16564" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="16064:16565" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="16220:16278" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1450338068000" expanded="true" signature="16333:16385" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1450338068000" expanded="true" signature="16439:16507" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1450338068000" expanded="true" signature="16622:16753" placeholder="SELECT id FR..boxoffice_app_price..." />
-                    <marker date="1450338068000" expanded="true" signature="17113:17899" placeholder="INSERT INTO boxoffice_app_eventprice..." />
-                    <marker date="1450338068000" expanded="true" signature="17206:17716" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="17206:17717" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="17366:17424" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1450338068000" expanded="true" signature="17481:17533" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1450338068000" expanded="true" signature="17589:17657" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1450338068000" expanded="true" signature="17762:17897" placeholder="SELECT id FR..boxoffice_app_price..." />
-                    <marker date="1450338068000" expanded="true" signature="19076:19845" placeholder="SELECT COUNT..boxoffice_app_date..." />
-                    <marker date="1450338068000" expanded="true" signature="19228:19768" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="19228:19769" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="19400:19458" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1450338068000" expanded="true" signature="19521:19573" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1450338068000" expanded="true" signature="19635:19703" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1450338068000" expanded="true" signature="20288:20948" placeholder="INSERT INTO boxoffice_app_date..." />
-                    <marker date="1450338068000" expanded="true" signature="20383:20933" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="20383:20934" placeholder="SELECT boxof..boxoffice_app_event..." />
-                    <marker date="1450338068000" expanded="true" signature="20559:20617" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-                    <marker date="1450338068000" expanded="true" signature="20682:20734" placeholder="SELECT id FR..boxoffice_app_venue..." />
-                    <marker date="1450338068000" expanded="true" signature="20798:20866" placeholder="SELECT id FR..boxoffice_app_city..." />
-                    <marker date="1450338068000" expanded="true" signature="21657:21701" placeholder="SELECT COUNT..boxoffice_app_updatelog..." />
-                    <marker date="1450338068000" expanded="true" signature="21812:21878" placeholder="UPDATE boxof..." />
-                    <marker date="1450338068000" expanded="true" signature="21975:22030" placeholder="INSERT INTO boxoffice_app_updatelog..." />
-                    <marker date="1450338068000" expanded="true" signature="23888:24008" placeholder="INSERT INTO boxoffice_app_errorlog..." />
+                    <element signature="e#625#666#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py">
+          <file leaf-file-name="auth_views.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/auth_views.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
+                  <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py">
+            <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-6.111111">
-                  <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
-                  <folding />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="24" column="10" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="10" />
+                  <folding>
+                    <element signature="e#24#39#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -178,12 +82,32 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/django_boxoffice/booking_app/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.6114865">
-                  <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/django_boxoffice/booking_app/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="1.6200716">
+                  <caret line="77" column="59" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -193,15 +117,36 @@
       </split-second>
     </splitter>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/admin.py" />
         <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py" />
-        <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/serializers.py" />
+        <option value="$PROJECT_DIR$/boxoffice/boxoffice/__init__.py" />
         <option value="$PROJECT_DIR$/boxoffice/boxoffice/BoxLocalDatabase.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/boxoffice_app/serializers.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/booking_app/models.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/booking_app/views.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/booking_app/serializers.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/booking_app/admin.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/boxoffice_app/models.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/boxoffice_app/admin.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/wsgi.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/urls.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/boxoffice_app/views.py" />
+        <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/auth_views.py" />
         <option value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py" />
       </list>
     </option>
@@ -212,10 +157,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
-    <option name="y" value="23" />
-    <option name="width" value="2556" />
-    <option name="height" value="1417" />
+    <option name="x" value="2560" />
+    <option name="y" value="383" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -224,7 +169,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -249,15 +194,9 @@
               <option name="myItemId" value="Boxoffice-server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Boxoffice-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Boxoffice-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -269,10 +208,6 @@
               <option name="myItemId" value="Boxoffice-server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="django_boxoffice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -281,10 +216,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Boxoffice-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="django_boxoffice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -303,6 +234,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="django_boxoffice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django_boxoffice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Boxoffice-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Boxoffice-server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -324,25 +269,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="boxoffice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Boxoffice-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Boxoffice-server" />
+              <option name="myItemId" value="django_boxoffice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="boxoffice" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="boxoffice" />
+              <option name="myItemId" value="booking_app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -353,10 +284,1948 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="Boxoffice-server" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="Boxoffice-server" />
+        <option name="myAddSourceRoots" value="true" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/django_boxoffice" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="boxoffice/user/auth/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="kokonak@mymusictaste.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="1234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="promoterERP/user/auth/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="kokonak@mymusictaste.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="1234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="promoterERP/user/auth/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="kokonak" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="1234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/promoterERP/user/auth" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="kokonak@mymusictaste.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="1234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/events/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/events/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/events/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/events/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/events/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/events/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="5" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/events" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/events" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/artists/1/events" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/artists/1" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/artists" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/events/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/events" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/events" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_index" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_index" />
+                <option name="value" value="100" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/events" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Token 01173eefd8ba5a0b2c3146428f841af7bedf7ecc" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/events" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/artists/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_date" />
+                <option name="value" value="20151201" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_date" />
+                <option name="value" value="20151231" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/boxoffice/artists/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="token 17e7e0f9e41e4acc562a954f6d31e90af4401cc2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_date" />
+                <option name="value" value="20151201" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_date" />
+                <option name="value" value="20151231" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/artists/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="token 17e7e0f9e41e4acc562a954f6d31e90af4401cc2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="start_date" />
+                <option name="value" value="20151201" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="end_date" />
+                <option name="value" value="20151231" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/order/01017-84438090-39885" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="token 17e7e0f9e41e4acc562a954f6d31e90af4401cc2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068308000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/order/01017-84438090-39885" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="token 17e7e0f9e41e4acc562a954f6d31e90af4401cc2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068261000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/order/01017-84438090-39885" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="17e7e0f9e41e4acc562a954f6d31e90af4401cc2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452068233000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/order/01017-84438090-39885" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="17e7e0f9e41e4acc562a954f6d31e90af4401cc2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452051186000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/order/01017-84438090-39885" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="17e7e0f9e41e4acc562a954f6d31e90af4401cc2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="nujabe@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="12341234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854647000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452051186000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/user/token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="nujabe@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="12341234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854483000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452051186000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/user/token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="nujabe@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="12341234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450854173000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452051186000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/user/token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="nujabe@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="12341234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450853280000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452051186000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/user/token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="nujabe@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="12341234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450841596000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1452051186000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/user/token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="nujabe@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="12341234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450841584000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1451893845000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/user/token_generate" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="nujabe@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="12341234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450841562000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1451893845000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/user/token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="nujabe@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="12341234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450684255000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1451893845000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/user/token" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="token 17e7e0f9e41e4acc562a954f6d31e90af4401cc2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="nujabe@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="12341234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450679347000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1451888937000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/order/01017-84438090-39885/ticket/3" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="token 17e7e0f9e41e4acc562a954f6d31e90af4401cc2" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450679266000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1451888929000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/user/token_generate" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450679266000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1451888856000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/user/token_generate" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="nujabe@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="12341234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450679218000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1451888822000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/user/token_generate" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="nujabe@gmail.com" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="12341234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="1450679218000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="multidb_pin_writes" />
+                <option name="path" value="/" />
+                <option name="value" value="y" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1451888808000" />
+                <option name="domain" value="staging.mymusictaste.com" />
+                <option name="name" value="sessionid" />
+                <option name="path" value="/" />
+                <option name="value" value="iyymkdir16xfypu2wa92jdqc8l18mb98" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/user/token_generate" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://staging.mymusictaste.com" />
+          <option name="urlPath" value="/api/v1/user/token_generate" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Django server.Django Server">
     <configuration default="false" name="BoxLocalDatabase" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -439,7 +2308,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Boxoffice-server" />
+      <module name="" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
       <option name="host" value="" />
@@ -470,6 +2339,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -592,8 +2466,8 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
-        <env name="DJANGO_SETTINGS_MODULE" value="django_boxoffice.settings" />
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="django_boxoffice.settings" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/.virtualenvs/boxoffice_env/bin/python" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -623,6 +2497,9 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="54dbd861-efb2-4a0b-b958-0c7009c20f70" name="Default" comment="" />
@@ -632,29 +2509,47 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="2556" height="1417" extended-state="6" />
+    <frame x="2560" y="383" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13086714" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948422" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13205537" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37593183" sideWeight="0.5063898" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18065888" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837406" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32837406" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948422" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29484218" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30818278" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37593183" sideWeight="0.49361023" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28115016" sideWeight="0.4978701" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -664,32 +2559,128 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="6" />
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="91" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/tests.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="113" column="51" selection-start-line="113" selection-start-column="51" selection-end-line="113" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/models.py">
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/MySQLdb/connections.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/django/core/handlers/base.py">
+    <entry file="file://$PROJECT_DIR$/boxoffice/boxoffice/BoxLocalDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8003328">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/uwsgi.pid">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/uwsgi.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/rest_framework/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33178654">
+          <caret line="519" column="8" selection-start-line="519" selection-start-column="8" selection-end-line="519" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/MySQLdb/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029761905">
+          <caret line="182" column="25" selection-start-line="182" selection-start-column="25" selection-end-line="182" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/rest_framework/permissions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14880952">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/rest_framework/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.022796353">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boxoffice/boxoffice/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boxoffice/boxoffice/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -697,123 +2688,257 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/boxoffice_app/views.py">
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.111111">
-          <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/booking_app/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/booking_app/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27554536">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/boxoffice/boxoffice/BoxLocalDatabase.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8266361">
+          <caret line="542" column="27" selection-start-line="542" selection-start-column="27" selection-end-line="542" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/booking_app/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.022156574">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/django/contrib/auth/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2709766">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1923077">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4059829">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boxoffice/spiderlog.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13574661">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33519554">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/handlers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/wsgiref/simple_server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="654" column="0" selection-start-line="654" selection-start-column="0" selection-end-line="654" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/django/contrib/staticfiles/handlers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/django/core/handlers/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="186" column="0" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/django/views/generic/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83168316">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/rest_framework/request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4397163">
+          <caret line="318" column="0" selection-start-line="318" selection-start-column="0" selection-end-line="318" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/rest_framework/authentication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48924732">
+          <caret line="465" column="0" selection-start-line="465" selection-start-column="0" selection-end-line="465" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/boxoffice_env/lib/python2.7/site-packages/rest_framework/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.034050178">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/booking_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/booking_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6200716">
+          <caret line="77" column="59" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/boxoffice_app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="10" />
           <folding>
-            <element signature="e#436#1298#0" expanded="false" />
-            <element signature="e#1338#6145#0" expanded="false" />
-            <element signature="e#6326#6855#0" expanded="false" />
-            <element signature="e#6904#7377#0" expanded="false" />
-            <element signature="e#7425#8047#0" expanded="false" />
-            <element signature="e#8100#8715#0" expanded="false" />
-            <element signature="e#8765#9356#0" expanded="false" />
-            <marker date="1450338068000" expanded="true" signature="486:535" placeholder="DROP TABLE I..." />
-            <marker date="1450338068000" expanded="true" signature="562:605" placeholder="DROP TABLE I..." />
-            <marker date="1450338068000" expanded="true" signature="632:677" placeholder="DROP TABLE I..." />
-            <marker date="1450338068000" expanded="true" signature="704:744" placeholder="DROP TABLE I..." />
-            <marker date="1450338068000" expanded="true" signature="771:810" placeholder="DROP TABLE I..." />
-            <marker date="1450338068000" expanded="true" signature="837:877" placeholder="DROP TABLE I..." />
-            <marker date="1450338068000" expanded="true" signature="904:950" placeholder="DROP TABLE I..." />
-            <marker date="1450338068000" expanded="true" signature="977:1017" placeholder="DROP TABLE I..." />
-            <marker date="1450338068000" expanded="true" signature="1044:1083" placeholder="DROP TABLE I..." />
-            <marker date="1450338068000" expanded="true" signature="1110:1153" placeholder="DROP TABLE I..." />
-            <marker date="1450338068000" expanded="true" signature="1479:1699" placeholder="CREATE TABLE..IF..." />
-            <marker date="1450338068000" expanded="true" signature="1751:2492" placeholder="CREATE TABLE..IF..." />
-            <marker date="1450338068000" expanded="true" signature="2544:2758" placeholder="CREATE TABLE..IF..." />
-            <marker date="1450338068000" expanded="true" signature="2810:3018" placeholder="CREATE TABLE..IF..." />
-            <marker date="1450338068000" expanded="true" signature="3070:3321" placeholder="CREATE TABLE..IF..." />
-            <marker date="1450338068000" expanded="true" signature="3373:4220" placeholder="CREATE TABLE..IF..." />
-            <marker date="1450338068000" expanded="true" signature="4272:4483" placeholder="CREATE TABLE..IF..." />
-            <marker date="1450338068000" expanded="true" signature="4535:4965" placeholder="CREATE TABLE..IF..." />
-            <marker date="1450338068000" expanded="true" signature="5017:5226" placeholder="CREATE TABLE..IF..." />
-            <marker date="1450338068000" expanded="true" signature="5278:5697" placeholder="CREATE TABLE..IF..." />
-            <marker date="1450338068000" expanded="true" signature="5749:6086" placeholder="CREATE TABLE..IF..." />
-            <marker date="1450338068000" expanded="true" signature="6423:6487" placeholder="SELECT COUNT..boxoffice_app_artistevent..." />
-            <marker date="1450338068000" expanded="true" signature="6707:6765" placeholder="INSERT INTO boxoffice_app_artistevent..." />
-            <marker date="1450338068000" expanded="true" signature="6986:7044" placeholder="SELECT COUNT..boxoffice_app_venue..." />
-            <marker date="1450338068000" expanded="true" signature="7243:7295" placeholder="INSERT INTO boxoffice_app_venue..." />
-            <marker date="1450338068000" expanded="true" signature="7594:7668" placeholder="SELECT COUNT..boxoffice_app_city..." />
-            <marker date="1450338068000" expanded="true" signature="7892:7956" placeholder="INSERT INTO boxoffice_app_city..." />
-            <marker date="1450338068000" expanded="true" signature="8272:8333" placeholder="SELECT COUNT..boxoffice_app_promoter..." />
-            <marker date="1450338068000" expanded="true" signature="8566:8621" placeholder="INSERT INTO boxoffice_app_promoter..." />
-            <marker date="1450338068000" expanded="true" signature="8922:8981" placeholder="SELECT COUNT..boxoffice_app_price..." />
-            <marker date="1450338068000" expanded="true" signature="9205:9258" placeholder="INSERT INTO boxoffice_app_price..." />
-            <marker date="1450338068000" expanded="true" signature="10352:10956" placeholder="SELECT COUNT..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="10474:10954" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="10474:10955" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="10622:10680" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1450338068000" expanded="true" signature="10731:10783" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1450338068000" expanded="true" signature="10833:10901" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1450338068000" expanded="true" signature="11302:11723" placeholder="INSERT INTO boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="11423:11481" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1450338068000" expanded="true" signature="11522:11590" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1450338068000" expanded="true" signature="11631:11683" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1450338068000" expanded="true" signature="12861:13701" placeholder="SELECT COUNT..boxoffice_app_eventpromoter..." />
-            <marker date="1450338068000" expanded="true" signature="13006:13506" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="13006:13507" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="13162:13220" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1450338068000" expanded="true" signature="13275:13327" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1450338068000" expanded="true" signature="13381:13449" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1450338068000" expanded="true" signature="13567:13700" placeholder="SELECT id FR..boxoffice_app_promoter..." />
-            <marker date="1450338068000" expanded="true" signature="14069:14860" placeholder="INSERT INTO boxoffice_app_eventpromoter..." />
-            <marker date="1450338068000" expanded="true" signature="14165:14675" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="14165:14676" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="14325:14383" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1450338068000" expanded="true" signature="14440:14492" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1450338068000" expanded="true" signature="14548:14616" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1450338068000" expanded="true" signature="14721:14858" placeholder="SELECT id FR..boxoffice_app_promoter..." />
-            <marker date="1450338068000" expanded="true" signature="15922:16754" placeholder="SELECT COUNT..boxoffice_app_eventprice..." />
-            <marker date="1450338068000" expanded="true" signature="16064:16564" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="16064:16565" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="16220:16278" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1450338068000" expanded="true" signature="16333:16385" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1450338068000" expanded="true" signature="16439:16507" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1450338068000" expanded="true" signature="16622:16753" placeholder="SELECT id FR..boxoffice_app_price..." />
-            <marker date="1450338068000" expanded="true" signature="17113:17899" placeholder="INSERT INTO boxoffice_app_eventprice..." />
-            <marker date="1450338068000" expanded="true" signature="17206:17716" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="17206:17717" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="17366:17424" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1450338068000" expanded="true" signature="17481:17533" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1450338068000" expanded="true" signature="17589:17657" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1450338068000" expanded="true" signature="17762:17897" placeholder="SELECT id FR..boxoffice_app_price..." />
-            <marker date="1450338068000" expanded="true" signature="19076:19845" placeholder="SELECT COUNT..boxoffice_app_date..." />
-            <marker date="1450338068000" expanded="true" signature="19228:19768" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="19228:19769" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="19400:19458" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1450338068000" expanded="true" signature="19521:19573" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1450338068000" expanded="true" signature="19635:19703" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1450338068000" expanded="true" signature="20288:20948" placeholder="INSERT INTO boxoffice_app_date..." />
-            <marker date="1450338068000" expanded="true" signature="20383:20933" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="20383:20934" placeholder="SELECT boxof..boxoffice_app_event..." />
-            <marker date="1450338068000" expanded="true" signature="20559:20617" placeholder="SELECT id FR..boxoffice_app_artistevent..." />
-            <marker date="1450338068000" expanded="true" signature="20682:20734" placeholder="SELECT id FR..boxoffice_app_venue..." />
-            <marker date="1450338068000" expanded="true" signature="20798:20866" placeholder="SELECT id FR..boxoffice_app_city..." />
-            <marker date="1450338068000" expanded="true" signature="21657:21701" placeholder="SELECT COUNT..boxoffice_app_updatelog..." />
-            <marker date="1450338068000" expanded="true" signature="21812:21878" placeholder="UPDATE boxof..." />
-            <marker date="1450338068000" expanded="true" signature="21975:22030" placeholder="INSERT INTO boxoffice_app_updatelog..." />
-            <marker date="1450338068000" expanded="true" signature="23888:24008" placeholder="INSERT INTO boxoffice_app_errorlog..." />
+            <element signature="e#24#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/auth_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="e#625#666#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_boxoffice/django_boxoffice/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5101351">
-          <caret line="107" column="25" selection-start-line="107" selection-start-column="25" selection-end-line="107" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.21505377">
+          <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
           <folding />
         </state>
       </provider>

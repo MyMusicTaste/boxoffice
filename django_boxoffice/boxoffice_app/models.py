@@ -11,6 +11,7 @@ class UpdateLog(models.Model):
     def __unicode__(self):
         return self.last_update
 
+
 class ArtistEvent(models.Model):
     name = models.CharField(max_length=512)
 
@@ -78,12 +79,18 @@ class Event(models.Model):
     class Admin:
         pass
 
+    def __unicode__(self):
+        return '%s' % self.id
+
+    # def __repr__(self):
+    #     return self
+
 
 class EventPromoter(models.Model):
     class Meta:
         unique_together = (('event', 'promoter'),)
 
-    event = models.ForeignKey(Event)
+    event = models.ForeignKey(Event, related_name='promoters')
     promoter = models.ForeignKey(Promoter)
 
     class Admin:
@@ -97,14 +104,14 @@ class EventPrice(models.Model):
     class Meta:
         unique_together = (('event', 'price'),)
 
-    event = models.ForeignKey(Event)
+    event = models.ForeignKey(Event, related_name='price')
     price = models.ForeignKey(Price)
 
     class Admin:
         pass
 
-    def __unicode__(self):
-        return "%s, %s" % (self.event_id, self.price_id)
+    # def __unicode__(self):
+    #     return "%s, %s" % (self.event_id, self.price_id)
 
 
 class Date(models.Model):
@@ -121,12 +128,12 @@ class Date(models.Model):
     class Admin:
         pass
 
-    def __unicode__(self):
-        return '"event_id" : "%s", "event_date" : "%s"' % (self.event_id, self.event_date)
-
-    def __repr__(self):
-        # return self
-        return '"event_id" : "%s", "event_date" : "%s"' % (self.event_id, self.event_date)
+    # def __unicode__(self):
+    #     return '"event_id" : "%s", "event_date" : "%s"' % (self.event_id, self.event_date)
+    #
+    # def __repr__(self):
+    #     # return self
+    #     return '"event_id" : "%s", "event_date" : "%s"' % (self.event_id, self.event_date)
 
 
 class ErrorLog(models.Model):
