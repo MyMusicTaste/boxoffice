@@ -7,8 +7,8 @@ from BoxString import BoxString
 
 
 class BoxLocalDatabase:
-    # db = MySQLdb.connect('localhost', 'boxoffice', 'mmtboxoffice1234', 'boxoffice_database')
-    db = MySQLdb.connect('localhost', 'root', '1234', 'boxoffice_database')
+    db = MySQLdb.connect('localhost', 'boxoffice', 'mmtboxoffice1234', 'boxoffice_database')
+    #db = MySQLdb.connect('localhost', 'root', '1234', 'boxoffice_database')
 
     def drop_all_table(self):
 
