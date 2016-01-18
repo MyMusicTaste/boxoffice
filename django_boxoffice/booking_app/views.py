@@ -1,14 +1,20 @@
 from django.shortcuts import render
 
 # Create your views here.
-import models
+from dateutil import parser
 from rest_framework import status
-from rest_framework.decorators import api_view
+from rest_framework.authentication import TokenAuthentication
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+
+import models
 import serializers
 
 
 @api_view(['GET'])
+@authentication_classes((TokenAuthentication,))
+@permission_classes((IsAuthenticated,))
 def get_clients(request, id_numb=None):
     if id_numb:
         model_list = models.Client.objects.filter(pk=id_numb)
@@ -23,6 +29,8 @@ def get_clients(request, id_numb=None):
 
 
 @api_view(['GET'])
+@authentication_classes((TokenAuthentication,))
+@permission_classes((IsAuthenticated,))
 def get_client_representatives(request, id_numb=None):
     if id_numb:
         if request.method == 'GET':
@@ -37,6 +45,8 @@ def get_client_representatives(request, id_numb=None):
 
 
 @api_view(['GET'])
+@authentication_classes((TokenAuthentication,))
+@permission_classes((IsAuthenticated,))
 def get_representatives(request, id_numb=None):
     if id_numb:
         model_list = models.Representatives.objects.filter(pk=id_numb)
@@ -51,6 +61,8 @@ def get_representatives(request, id_numb=None):
 
 
 @api_view(['GET'])
+@authentication_classes((TokenAuthentication,))
+@permission_classes((IsAuthenticated,))
 def get_representatives_client(request, id_numb=None):
     if id_numb:
         if request.method == 'GET':
@@ -65,6 +77,8 @@ def get_representatives_client(request, id_numb=None):
 
 
 @api_view(['GET'])
+@authentication_classes((TokenAuthentication,))
+@permission_classes((IsAuthenticated,))
 def get_clients_representatives(request, id_numb=None):
     if id_numb:
         model_list = models.ClientRepresentatives.objects.filter(pk=id_numb)
