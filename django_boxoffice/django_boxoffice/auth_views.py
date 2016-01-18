@@ -20,6 +20,10 @@ class ExampleAuthentication(authentication.BaseAuthentication):
 
         try:
             user = User.objects.get(email=email)
+            token = Token.objects.filter(user_id=user.id)
+            if token.exists() is False:
+                Token.objects.create(user=user)
+
         except User.DoesNotExist:
             raise exceptions.AuthenticationFailed('No such user')
 
