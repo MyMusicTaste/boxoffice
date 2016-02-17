@@ -25,7 +25,9 @@ class BOSpider(scrapy.Spider):
             item['city'] = row_items[3].xpath('text()').extract()[0]
             item['date'] = row_items[4].xpath('text()').extract()[0]
             item['gross_sales'] = row_items[5].xpath('text()').extract()[0]
-            item['attend_cap'] = row_items[6].xpath('text()').extract()[0]
+            attend_capacity = row_items[6].xpath('text()').extract()
+            item['attend_cap'] = '%s%s' % (attend_capacity[0], attend_capacity[1])
+            # item['attend_cap'] = row_items[6].xpath('text()').extract()[0]
             item['shows_sellout'] = row_items[7].xpath('text()').extract()[0]
             item['prices'] = row_items[8].xpath('text()').extract()[0]
             item['promoters'] = row_items[9].xpath('text()').extract()[0]
